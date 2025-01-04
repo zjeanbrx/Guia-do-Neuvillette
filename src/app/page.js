@@ -2,11 +2,14 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 import Bloco from "@/componentes/bloco";
-import Topico from "@/componentes/topico"
+import Topico from "@/componentes/topico";
+import ImgFull from "@/componentes/imgfull";
 import { useState } from "react";
 
-export default function Home() {
+import Banner from '../../public/geral/Banner.png'
 
+export default function Home() {
+  
   const displayNone = styles.display_none;
   const displayBlock = styles.display_block;
   const menuFechado = styles.menu_fechado;
@@ -32,6 +35,7 @@ export default function Home() {
         <h1>Neuvillette by Sun</h1>
       </header>
       <main>
+        <ImgFull imagem={Banner} alt={"Você é um merda, Sun"}/>
         <Topico titulo="Resumo">
           <p>Neuvi é horrivel lixo</p>
         </Topico>
