@@ -40,7 +40,7 @@ export default function Home() {
           <p>Neuvi é horrivel lixo</p>
         </Topico>
         <Topico titulo="Armas">
-          <p>usa qualquer merda</p>
+          <p>usa qualquer <b>merda</b></p>
         </Topico>
         <Topico titulo="Status">
           <p>deixa nivel 0 mesmo essa bosta</p>
