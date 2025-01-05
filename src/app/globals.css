@@ -52,6 +52,8 @@ main {
   display: flex;
   flex-flow: column nowrap;
   gap: 40px;
+  background: black;
+  box-shadow: 0 0 50px black;
 }
 main > * {
   display: flex;
