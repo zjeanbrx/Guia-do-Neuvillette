@@ -30,8 +30,9 @@ export default function Home() {
     <div>
       <nav className={menuEstado ? `${menuAberto} ${menu}` : `${menuFechado} ${menu}`}>
         <Link onClick={fecharMenu} href="#resumo">Resumo</Link>
-        <Link onClick={fecharMenu} href="#">Resumo</Link>
-        <Link onClick={fecharMenu} href="#">Resumo</Link>
+        <Link onClick={fecharMenu} href="#">Armas</Link>
+        <Link onClick={fecharMenu} href="#">Status</Link>
+        <Link onClick={fecharMenu} href="#">Teste</Link>
       </nav>
       <div className={menuEstado ? `${displayBlock} ${fecharMenuDiv}` : displayNone} onClick={fecharMenu}></div>
       <header>
