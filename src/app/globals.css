@@ -1,13 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jersey+15&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-family: 'poppins'
+  font-family: 'jersey 15';
+  font-weight: 100;
 }
 
-h2 {font-size: 28px;} h3 {font-size: 24px;} p {font-size: 18px; color: rgb(197, 197, 197); font-weight: 300;} b{color: white; font-weight: bold;}
+h2 {font-size: 36px;} 
+h3 {font-size: 30px;} 
+p {font-size: 24px; color: rgb(197, 197, 197); font-weight: 100;} 
+b{color: white; font-weight: bold;}
+
 :root {
   --header: rgba(0, 0, 0, 0.87);
   --azul-1: rgb(72, 149, 212);
@@ -16,7 +22,7 @@ h2 {font-size: 28px;} h3 {font-size: 24px;} p {font-size: 18px; color: rgb(197, 
  
 }
 
-input {
+input, button {
   all: unset;
 }
 
@@ -46,7 +52,7 @@ body {
 main {
   width: 100%;
   min-height: 100vh;
-  max-width: 1200px;
+  max-width: 1100px;
   margin: 80px auto 0;
   padding: 20px;
   display: flex;
@@ -55,6 +61,7 @@ main {
   background: black;
   box-shadow: 0 0 50px black;
 }
+
 main > * {
   display: flex;
   flex-flow: column nowrap;
@@ -83,10 +90,21 @@ header {
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
-  justify-content: center
+  justify-content: space-between;
+  padding: 0 20px;
 }
 header h1 {
-  font-size: 30px;
+  font-size: 44px;
+} 
+@media (max-width: 500px) {
+  header h1 {
+    font-size: 36px;
+  }
+}
+@media (max-width: 340px) {
+  header h1 {
+    font-size: 34px;
+  }
 }
 
 
