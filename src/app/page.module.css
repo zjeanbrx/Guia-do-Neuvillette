@@ -8,13 +8,13 @@
 
 .menu {
     width: 260px;
+    height: 100vh;
     transition: all 0.3s;
     padding: 40px 10px 10px 40px;
     z-index: 100;
     position: fixed;
     right: 0;
     top: 80px;
-    bottom: 0;
     display: flex;
     flex-flow: column nowrap;
     gap:10px
@@ -77,9 +77,10 @@
     display: none;
   }
 }
-.home {
+.pros_cons {
     display: flex;
-    justify-content: center;
-    align-items: center;
-
+    flex-flow: row wrap;
+}
+.pros_cons > div {
+    flex: 1 0 250px;
 }

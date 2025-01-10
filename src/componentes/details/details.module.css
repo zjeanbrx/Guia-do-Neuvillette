@@ -1,0 +1,38 @@
+.details > button {
+    font-size: 30px;
+    box-shadow: 0 0 30px  var(--bg);
+    border: 1px solid var(--border);
+    background-color: black;
+    border-radius: 15px;
+    width: calc(100% - 20px);
+    padding: 10px;
+    text-align: center;
+
+    &:hover {
+        background: var(--bg);
+        box-shadow: none;
+    }
+}
+.details > div {
+    margin-top: 10px;
+    transition: all 0.5s;
+}
+.details_txt_closed {
+    display: none;
+}
+.details_txt_open {
+    display: block;
+    animation: fade 0.5s;
+}
+@keyframes fade {
+    0% {opacity: 0; transform: translateX(-5%);}
+    100% {opacity: 1;}
+}
+.verde {
+    --bg: rgba(0, 128, 0, 0.541);
+    --border: green;
+}
+.vermelho {
+    --bg: rgba(128, 0, 0, 0.541);
+    --border: rgb(128, 0, 0);
+}

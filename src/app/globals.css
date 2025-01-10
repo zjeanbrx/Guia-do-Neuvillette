@@ -26,27 +26,12 @@ input, button {
   all: unset;
 }
 
-@keyframes bg {
-	0% {
-		background-position: 0% 0%;
-	}
-	50% {
-		background-position: 100% 100%;
-	}
-	100% {
-		background-position: 0% 0%;
-	}
-}
-
 html,
 body {
   max-width: 100%;
   min-height: 100vh;
   overflow-x: hidden;
-  background: linear-gradient(315deg, rgb(20, 0, 19) 3%, rgb(3, 10, 17) 38%, rgb(19, 0, 17) 68%, rgb(1, 7, 12) 98%);
-  animation: bg 15s ease infinite;
-  background-size: 400% 400%;
-  background-attachment: fixed;
+  background:rgb(1, 7, 12) 98%;
 }
 
 main {

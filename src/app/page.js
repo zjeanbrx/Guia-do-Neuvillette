@@ -2,9 +2,11 @@
 import Image from "next/image";
 import Link from "next/link";
 import styles from "./page.module.css";
+import detailsCor from "@/componentes/details/details.module.css"
 import Bloco from "@/componentes/bloco";
 import Topico from "@/componentes/topico";
 import ImgFull from "@/componentes/imgfull";
+import Details from "@/componentes/details";
 import { useState } from "react";
 
 import Banner from '../../public/geral/Banner.png'
@@ -45,10 +47,28 @@ export default function Home() {
         </button>
       </header>
       <main>
-        <ImgFull imagem={Banner} alt={"Você é um merda, Sun"}/>
+        <ImgFull imagem={Banner} alt="Você é um merda, Sun"/>
         <Topico titulo="Resumo" id="resumo">
           <p>Neuvillette é um personagem T5 Hydro Catalisador com um estilo único de Gameplay, baseado principalmente em seus ataques carregados de dano constante e em área</p>
         </Topico>
+        <div className={styles.pros_cons}>
+          <Details titulo="Pros" cor={detailsCor.verde}>
+            <div>
+              <p>hydro gay</p>
+              <p>hydro gay</p>
+              <p>hydro gay</p>
+              <p>hydro gay</p>
+            </div>
+          </Details>
+          <Details titulo="Contras" cor={detailsCor.vermelho}>
+            <div>
+              <p>velho broxa</p>
+              <p>velho broxa</p>
+              <p>velho broxa</p>
+              <p>velho broxa</p>
+            </div>
+          </Details>
+        </div>
         <Topico titulo="Armas">
           <p>usa qualquer <b>merda</b></p>
         </Topico>
