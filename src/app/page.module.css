@@ -84,3 +84,14 @@
 .pros_cons > div {
     flex: 1 0 250px;
 }
+.glossario {
+    width: 100%;
+    border-spacing: 10px;
+}
+.glossario td {
+    font-size: 24px;
+}
+.glossario td:first-of-type {
+    padding: 5px 20px 5px 0;
+    border-right: 2px solid rgb(39, 39, 39);
+}

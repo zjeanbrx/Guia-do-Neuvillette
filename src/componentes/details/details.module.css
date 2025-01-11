@@ -1,16 +1,16 @@
 
 .details > button {
     font-size: 30px;
-    box-shadow: 0 0 30px  var(--bg);
+    box-shadow: 0 0 30px  var(--bs);
     border: 1px solid var(--border);
-    background-color: black;
+    background-color: var(--bg);
     border-radius: 15px;
     width: calc(100% - 20px);
     padding: 10px;
     text-align: center;
 
     &:hover {
-        background: var(--bg);
+        background: var(--bg-hover);
         box-shadow: none;
     }
     &:active {
@@ -41,7 +41,7 @@
 .arrow_closed {transform: rotate(90deg);}
 
 @keyframes fade {
-    0% {opacity: 0; transform: translateX(-15px);}
+    0% {opacity: 0; transform: translateY(-15px);}
     50% {opacity: 1;}
 }
 @keyframes fadetxt {
@@ -49,12 +49,22 @@
     100% {color: rgb(175, 175, 175);}
 }
 .verde {
-    --bg: rgba(0, 77, 0, 0.541);
+    --bg: black;
+    --bg-hover: rgb(0, 95, 0);
+    --bs: rgba(0, 77, 0, 0.541);
     --txt: rgba(0, 77, 0, 0.541);
     --border: rgb(0, 95, 0);
 }
 .vermelho {
-    --bg: rgba(82, 0, 0, 0.541);
+    --bg: black;
+    --bg-hover: rgb(94, 0, 0);
+    --bs: rgba(82, 0, 0, 0.541);
     --txt: rgba(82, 0, 0, 0.541);
     --border: rgb(94, 0, 0);
+}
+.branco {
+    --bg: rgb(12, 12, 12);
+    --bg-hover: rgb(24, 24, 24);
+    --bs: none;
+    --border: rgb(73, 73, 73);
 }

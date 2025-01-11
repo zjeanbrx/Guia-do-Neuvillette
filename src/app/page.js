@@ -51,6 +51,60 @@ export default function Home() {
         <Topico titulo="Resumo" id="resumo">
           <p>Neuvillette é um personagem T5 Hydro Catalisador com um estilo único de Gameplay, baseado principalmente em seus ataques carregados de dano constante e em área</p>
         </Topico>
+        <Details titulo="Glossário" cor={detailsCor.branco}>
+          <table className={styles.glossario}>
+            <tbody>
+              <tr>
+                <td>AOE</td>
+                <td>Área de Efeito</td>
+              </tr>
+              <tr>
+                <td>AC</td>
+                <td>Ataque Carregado</td>
+              </tr>
+              <tr>
+                <td>E</td>
+                <td>Habilidade Elemental</td>
+              </tr>
+              <tr>
+                <td>Q</td>
+                <td>Supremo</td>
+              </tr>
+              <tr>
+                <td>ER</td>
+                <td>Recarga de Energia</td>
+              </tr>
+              <tr>
+                <td>Stacks</td>
+                <td>Acúmulo</td>
+              </tr>
+              <tr>
+                <td>VV</td>
+                <td>Set de Artefatos Sombra Verde</td>
+              </tr>
+              <tr>
+                <td>Res</td>
+                <td>Resistência</td>
+              </tr>
+              <tr>
+                <td>A1</td>
+                <td>Ascensão 1</td>
+              </tr>
+              <tr>
+                <td>A4</td>
+                <td>Ascensão 4</td>
+              </tr>
+              <tr>
+                <td>Funneling</td>
+                <td>Uma das maneiras pelas quais uma unidade pode servir como uma bateria. Envolve trocar personagens imediatamente após gerar Partículas Elementais</td>
+              </tr>
+              <tr>
+                <td>Enabler</td>
+                <td>Personagens que aplicam Elementos para “habilitar” reações</td>
+              </tr>
+            </tbody>
+          </table>
+        </Details>
         <div className={styles.pros_cons}>
           <Details titulo="Pros" cor={detailsCor.verde}>
             <p>Tem um dano altíssimo com investimentos mínimos, conseguindo fazer qualquer conteúdo do jogo. Pode ser jogado sozinho por ter auto-sustain, o que abre slots que seriam de healers para personagens mais agressivos.</p>
