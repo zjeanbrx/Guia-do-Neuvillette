@@ -47,26 +47,21 @@ export default function Home() {
         </button>
       </header>
       <main>
-        <ImgFull imagem={Banner} alt="Você é um merda, Sun"/>
+        <ImgFull imagem={Banner} alt={'banner'}/>
         <Topico titulo="Resumo" id="resumo">
           <p>Neuvillette é um personagem T5 Hydro Catalisador com um estilo único de Gameplay, baseado principalmente em seus ataques carregados de dano constante e em área</p>
         </Topico>
         <div className={styles.pros_cons}>
           <Details titulo="Pros" cor={detailsCor.verde}>
-            <div>
-              <p>hydro gay</p>
-              <p>hydro gay</p>
-              <p>hydro gay</p>
-              <p>hydro gay</p>
-            </div>
+            <p>Tem um dano altíssimo com investimentos mínimos, conseguindo fazer qualquer conteúdo do jogo. Pode ser jogado sozinho por ter auto-sustain, o que abre slots que seriam de healers para personagens mais agressivos.</p>
+            <p>Tem uma Gameplay simples e pode ser usado de uma distância considerável contra inimigos, evitando tomar dano.</p>
+            <p>É o único personagem no jogo com potencial de dano em área “infinito” no abismo, sendo o melhor DPS do meta atual para conteúdos com múltiplos alvos ou ondas de inimigos, ainda com muita relevância em conteúdos de alvos únicos.</p>
+            <p>Possui uma grande variedade de times, podendo ser usado com essencialmente “qualquer coisa” de elementos diferentes para a sua passiva.</p>
           </Details>
           <Details titulo="Contras" cor={detailsCor.vermelho}>
-            <div>
-              <p>velho broxa</p>
-              <p>velho broxa</p>
-              <p>velho broxa</p>
-              <p>velho broxa</p>
-            </div>
+            <p>Por seu kit escalar principalmente com HP muitos suportes ficam inutilizáveis, e seu tempo em campo muitas vezes não permite renovação de buffs que têm pouca duração.</p>
+            <p>Na C0, Neuvillette não tem resistência à interrupção, tendo seus ataques carregados cancelados ao sofrer dano.</p>
+            <p>A forma como Neuvillette dá dano não é apropriada para speedruns, existindo opções melhores para dano explosivo em janelas minúsculas de tempo.</p>
           </Details>
         </div>
         <Topico titulo="Armas">
