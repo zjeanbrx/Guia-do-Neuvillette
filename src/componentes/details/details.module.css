@@ -1,3 +1,4 @@
+
 .details > button {
     font-size: 30px;
     box-shadow: 0 0 30px  var(--bg);
@@ -29,6 +30,10 @@
     gap: 10px;
     animation: fade 0.5s;
 }
+.details_txt_open p {
+    animation: fadetxt 1.5s;
+}
+
 .arrow_open {transform: rotate(-90deg);}
 .arrow_closed {transform: rotate(90deg);}
 
@@ -36,11 +41,17 @@
     0% {opacity: 0; transform: translateX(-15px);}
     100% {opacity: 1;}
 }
+@keyframes fadetxt {
+    0% {color: var(--txt);}
+    100% {color: rgb(175, 175, 175);}
+}
 .verde {
     --bg: rgba(0, 77, 0, 0.541);
+    --txt: rgba(0, 77, 0, 0.541);
     --border: rgb(0, 95, 0);
 }
 .vermelho {
     --bg: rgba(82, 0, 0, 0.541);
+    --txt: rgba(82, 0, 0, 0.541);
     --border: rgb(94, 0, 0);
 }

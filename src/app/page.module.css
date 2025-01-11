@@ -25,10 +25,10 @@
 
 .fechar_menu {
     width: 100vw;
-    height: calc(100vh - 80px);
+    height: 100vh;
     position: fixed;
     z-index: 99;
-    bottom: 0;
+    top: 80;
     left: 0;
     background-color: rgba(0, 0, 0, 0.397);
     transition: all 0.2s;
