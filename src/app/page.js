@@ -33,9 +33,7 @@ export default function Home() {
         <Link onClick={Menu} href="#glossario">Glossário</Link>
         <Link onClick={Menu} href="#duvidas-frequentes">Dúvidas Frequentes</Link>
         <Link onClick={Menu} href="#talentos">Talentos</Link>
-        <Link onClick={Menu} href="#armas">Armas</Link>
         <Link onClick={Menu} href="#status">Status</Link>
-        <Link onClick={Menu} href="#">Teste</Link>
       </nav>
       <div className={menuEstado ? `${displayBlock} ${fecharMenuDiv}` : displayNone} onClick={Menu}></div>
       <header>
@@ -170,11 +168,8 @@ export default function Home() {
             <p>A passiva A4 de Neuvillette concede um bônus de Dano Hydro com base em sua vida máxima, podendo chegar a até 30% quando ele está com 100% da vida. Embora ofereça um aumento de dano pequeno, esse efeito é significativo. Durante o uso dos Ataques Carregados (AC), Neuvillette perde vida e, consequentemente, o bônus de Dano Hydro reduz. No entanto, ele rapidamente se cura e retorna à sua vida máxima, recuperando o bônus de 30% de Dano Hydro.</p>
           </Talento>
         </Topico>
-        <Topico titulo="Armas" id="armas">
-          <p>usa qualquer <b>merda</b></p>
-        </Topico>
         <Topico titulo="Status" id="status">
-          <p>deixa nivel 0 mesmo essa bosta</p>
+          
         </Topico>
       </main>
     </div>
