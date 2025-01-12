@@ -6,7 +6,7 @@
     border: 1px solid var(--border);
     background-color: var(--bg);
     border-radius: 15px;
-    width: calc(100% - 20px);
+    width: calc(100% - 22px);
     padding: 10px;
     display: flex;
     justify-content: center;
@@ -86,4 +86,9 @@
 }
 .vazio button {
     justify-content: space-between;
+}
+@media (max-width: 500px) {
+    .details button {
+        font-size: 22px;
+    }
 }

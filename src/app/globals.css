@@ -12,8 +12,12 @@
 h1 {font-family: 'jersey 15';}
 h2 {font-size: 30px; font-weight: bold;} 
 h3 {font-size: 26px;} 
-p {font-size: 20px; color: rgb(133, 133, 133); font-weight: 300;} 
+p {font-size: 19px; color: rgb(133, 133, 133); font-weight: 400;} 
 b{color: white; font-weight: 300;}
+
+@media (max-width: 500px) {
+  h3 {font-size: 24px;}
+}
 
 :root {
   --header: rgba(0, 0, 0, 0.87);
@@ -32,7 +36,7 @@ body {
   max-width: 100%;
   min-height: 100vh;
   overflow-x: hidden;
-  background:rgb(1, 7, 12) 98%;
+  background: rgb(2, 7, 14);
   scroll-padding-top: 100px;
   scroll-behavior: smooth !important;
 }
@@ -45,9 +49,9 @@ main {
   padding: 20px;
   display: flex;
   flex-flow: column nowrap;
-  gap: 40px;
+  gap: 50px;
   background: black;
-  box-shadow: 0 0 50px black;
+  box-shadow: 0 0 100px 0px black;
 }
 
 main > * {
@@ -88,6 +92,11 @@ header h1 {
 @media (max-width: 500px) {
   header h1 {
     font-size: 36px;
+  }
+}
+@media (max-width: 380px) {
+  main {
+    padding: 10px;
   }
 }
 @media (max-width: 340px) {

@@ -86,12 +86,17 @@
 }
 .glossario {
     width: 100%;
-    border-spacing: 10px;
+    border-spacing: 0 15px;
 }
-.glossario td {
-    font-size: 20px;
+.glossario td:nth-of-type(2) {
+    font-size: 18px;
+    font-weight: 300;
+    padding-left: 10px;
 }
 .glossario td:first-of-type {
+    font-size: 20px;
+    color: white;
+    font-weight: 600;
     padding: 5px 20px 5px 0;
     border-right: 2px solid rgb(39, 39, 39);
 }

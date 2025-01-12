@@ -1,3 +1,9 @@
 .titulo_topico {
     color: var(--azul-1);
+    margin-bottom: 10px;
+}
+@media (max-width: 500px) {
+    .titulo_topico {
+        font-size: 26px;
+    }
 }
