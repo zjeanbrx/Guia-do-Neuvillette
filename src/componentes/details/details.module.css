@@ -7,7 +7,10 @@
     border-radius: 15px;
     width: calc(100% - 20px);
     padding: 10px;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
 
     &:hover {
         background: var(--bg-hover);
@@ -46,7 +49,7 @@
 }
 @keyframes fadetxt {
     0% {color: var(--txt);}
-    100% {color: rgb(175, 175, 175);}
+    100% {color: rgb(133, 133, 133);}
 }
 .verde {
     --bg: black;
@@ -67,4 +70,14 @@
     --bg-hover: rgb(24, 24, 24);
     --bs: none;
     --border: rgb(73, 73, 73);
+}
+.vazio {
+    --bg: none;
+    --bg-hover: rgb(17, 17, 17);
+    --bs: none;
+    --txt: black;
+    --border: rgb(24, 24, 24);
+}
+.vazio button {
+    justify-content: flex-start;
 }

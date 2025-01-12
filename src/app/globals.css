@@ -11,8 +11,8 @@
 
 h2 {font-size: 36px;} 
 h3 {font-size: 30px;} 
-p {font-size: 24px; color: rgb(175, 175, 175); font-weight: 100;} 
-b{color: white; font-weight: bold;}
+p {font-size: 24px; color: rgb(133, 133, 133); font-weight: 100;} 
+b{color: white; font-weight: 300;}
 
 :root {
   --header: rgba(0, 0, 0, 0.87);
