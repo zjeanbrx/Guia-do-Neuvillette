@@ -32,6 +32,7 @@ export default function Home() {
         <Link onClick={Menu} href="#resumo">Resumo</Link>
         <Link onClick={Menu} href="#glossario">Glossário</Link>
         <Link onClick={Menu} href="#duvidas-frequentes">Dúvidas Frequentes</Link>
+        <Link onClick={Menu} href="#talentos">Talentos</Link>
         <Link onClick={Menu} href="#armas">Armas</Link>
         <Link onClick={Menu} href="#status">Status</Link>
         <Link onClick={Menu} href="#">Teste</Link>
