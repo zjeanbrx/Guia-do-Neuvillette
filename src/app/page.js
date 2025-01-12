@@ -7,6 +7,7 @@ import Bloco from "@/componentes/bloco";
 import Topico from "@/componentes/topico";
 import ImgFull from "@/componentes/imgfull";
 import Details from "@/componentes/details";
+import ocultarDuvidas from "@/componentes/details/"
 import { useState } from "react";
 
 import Banner from '../../public/geral/Banner.png'
@@ -20,7 +21,7 @@ export default function Home() {
   const menuAberto = styles.menu_aberto;
   const menu = styles.menu;
   const [menuEstado, setMenuEstado] = useState(false);
-
+  
   function Menu() {
     setMenuEstado(!menuEstado)
   }
