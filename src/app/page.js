@@ -24,19 +24,18 @@ export default function Home() {
   function Menu() {
     setMenuEstado(!menuEstado)
   }
-  function fecharMenu() {
-    setMenuEstado(!menuEstado)
-  }
 
   return (
     <div>
       <nav className={menuEstado ? `${menuAberto} ${menu}` : `${menuFechado} ${menu}`}>
-        <Link onClick={fecharMenu} href="#resumo">Resumo</Link>
-        <Link onClick={fecharMenu} href="#">Armas</Link>
-        <Link onClick={fecharMenu} href="#">Status</Link>
-        <Link onClick={fecharMenu} href="#">Teste</Link>
+        <Link onClick={Menu} href="#resumo">Resumo</Link>
+        <Link onClick={Menu} href="#glossario">Glossário</Link>
+        <Link onClick={Menu} href="#duvidas-frequentes">Dúvidas Frequentes</Link>
+        <Link onClick={Menu} href="#armas">Armas</Link>
+        <Link onClick={Menu} href="#status">Status</Link>
+        <Link onClick={Menu} href="#">Teste</Link>
       </nav>
-      <div className={menuEstado ? `${displayBlock} ${fecharMenuDiv}` : displayNone} onClick={fecharMenu}></div>
+      <div className={menuEstado ? `${displayBlock} ${fecharMenuDiv}` : displayNone} onClick={Menu}></div>
       <header>
         <div className={styles.counter}></div>
         <h1>Neuvillette by Sun</h1>
@@ -47,11 +46,11 @@ export default function Home() {
         </button>
       </header>
       <main>
-        <ImgFull imagem={Banner} alt={'banner'}/>
+        <ImgFull imagem={Banner} alt='banner'/>
         <Topico titulo="Resumo" id="resumo">
           <p>Neuvillette é um personagem T5 Hydro Catalisador com um estilo único de Gameplay, baseado principalmente em seus ataques carregados de dano constante e em área</p>
         </Topico>
-        <Details titulo="Glossário" cor={detailsCor.branco}>
+        <Details titulo="Glossário" id="glossario" cor={detailsCor.branco}>
           <table className={styles.glossario}>
             <tbody>
               <tr>
@@ -118,7 +117,7 @@ export default function Home() {
             <p>A forma como Neuvillette dá dano não é apropriada para speedruns, existindo opções melhores para dano explosivo em janelas minúsculas de tempo.</p>
           </Details>
         </div>
-        <Topico titulo="Dúvidas Frequentes"> 
+        <Topico titulo="Dúvidas Frequentes" id="duvidas-frequentes"> 
           <Details titulo={"O Neuvillette precisa de escudo na C0?"} cor={detailsCor.vazio}>
             <p>Não é necessário ter um escudo mesmo na c0. Neuvillette possui a propriedade especial de se mover livremente durante seu ataque carregado, podendo desviar de ataques com facilidade. Todavia, para jogadores mais casuais enfrentando inimigos mais agressivos, um escudo é recomendável pois toda sua rotação é cancelada caso ele seja interrompido. Em cenários onde o foco será apenas fazer os conteúdos do jogo da forma mais rápida possível, é recomendado para jogadores mais experientes usarem opções mais ofensivas como buffers ou DPS fora de campo.
             </p>
@@ -131,7 +130,7 @@ export default function Home() {
             </p>
           </Details>
           <Details titulo={"Vale a pena coroar o Auto Ataque do Neuvillette?"} cor={detailsCor.vazio}>
-            <p>Sim. É de longe o talento que possui a principal fonte de dano do Neuvillette, pois é aqui onde encontramos os multiplicadores do seu ataque carregado.</p>
+            <p>Sim 👑. É de longe o talento que possui a principal fonte de dano do Neuvillette, pois é aqui onde encontramos os multiplicadores do seu ataque carregado.</p>
             <p><b>Curiosidade: Coroar seu ataque normal tem um aumento de dano maior do que upar o talento de todas as suas Habilidades para (9/9/9).</b></p>
           </Details>
           <Details titulo={"Mualani vs Neuvillette"} cor={detailsCor.vazio}>
@@ -149,10 +148,10 @@ export default function Home() {
             <p>Sua C1 apesar de menos benéfica em dano, Tem um aumento muito superior à sua r1 quando se colocado com o Neuvillette em time com furina tendo um DPS avassalador além de habilitar uma grande variedade de times já que dará um acúmulo a mais da sua passiva A1, permitindo-o rodar em times de double elemento tranquilamente.</p>
           </Details>
         </Topico>
-        <Topico titulo="Armas">
+        <Topico titulo="Armas" id="armas">
           <p>usa qualquer <b>merda</b></p>
         </Topico>
-        <Topico titulo="Status">
+        <Topico titulo="Status" id="status">
           <p>deixa nivel 0 mesmo essa bosta</p>
         </Topico>
       </main>
