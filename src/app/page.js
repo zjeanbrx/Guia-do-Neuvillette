@@ -11,6 +11,7 @@ import { useState } from "react";
 
 import Banner from '../../public/geral/Banner.png';
 import Talento from "@/componentes/talento";
+import Artefato from "@/componentes/artefato";
 
 export default function Home() {
   
@@ -169,7 +170,8 @@ export default function Home() {
           </Talento>
         </Topico>
         <Topico titulo="Status" id="status">
-          
+          <Artefato title={"Caçador das Sombras"} iconUrl={"/artefatos/Cacador_das_Sombras.png"}
+          bonus2={"Aumenta o dano causado pelos Ataques normais e carregados em 15%."} bonus4={"Garante um grande aumento na Taxa Crítica caso ocorra variação de HP. Permitindo que Neuvillette acumule rapidamente o efeito completo desse conjunto, de forma consistente e contínua."}/>
         </Topico>
       </main>
     </div>
