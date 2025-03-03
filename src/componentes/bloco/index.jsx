@@ -1,8 +1,9 @@
 import React from 'react';
+import styles from './bloco.module.css'
 
 export default function Bloco ({ children }) {
   return (
-    <div>
+    <div className={styles.bloco}>
       {children}
     </div>
   );

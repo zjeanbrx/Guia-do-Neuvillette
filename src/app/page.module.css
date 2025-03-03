@@ -80,6 +80,7 @@
 .pros_cons {
     display: flex;
     flex-flow: row wrap;
+    gap: 15px;
 }
 .pros_cons > div {
     flex: 1 0 250px;

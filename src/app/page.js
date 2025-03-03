@@ -8,6 +8,7 @@ import Topico from "@/componentes/topico";
 import ImgFull from "@/componentes/imgfull";
 import Details from "@/componentes/details";
 import { useState } from "react";
+import { Hourglass, Filter, Crown } from 'lucide-react';
 
 import Banner from '../../public/geral/Banner.png';
 import Talento from "@/componentes/talento";
@@ -51,73 +52,75 @@ export default function Home() {
         <Topico titulo="Resumo" id="resumo">
           <p>Neuvillette é um personagem T5 Hydro Catalisador com um estilo único de Gameplay, baseado principalmente em seus ataques carregados de dano constante e em área</p>
         </Topico>
-        <Details titulo="Glossário" id="glossario" cor={detailsCor.branco}>
-          <table className={styles.glossario}>
-            <tbody>
-              <tr>
-                <td>AOE</td>
-                <td>Área de Efeito</td>
-              </tr>
-              <tr>
-                <td>AC</td>
-                <td>Ataque Carregado</td>
-              </tr>
-              <tr>
-                <td>E</td>
-                <td>Habilidade Elemental</td>
-              </tr>
-              <tr>
-                <td>Q</td>
-                <td>Supremo</td>
-              </tr>
-              <tr>
-                <td>ER</td>
-                <td>Recarga de Energia</td>
-              </tr>
-              <tr>
-                <td>Stacks</td>
-                <td>Acúmulo</td>
-              </tr>
-              <tr>
-                <td>VV</td>
-                <td>Set de Artefatos Sombra Verde</td>
-              </tr>
-              <tr>
-                <td>Res</td>
-                <td>Resistência</td>
-              </tr>
-              <tr>
-                <td>A1</td>
-                <td>Ascensão 1</td>
-              </tr>
-              <tr>
-                <td>A4</td>
-                <td>Ascensão 4</td>
-              </tr>
-              <tr>
-                <td>Funneling</td>
-                <td>Uma das maneiras pelas quais uma unidade pode servir como uma bateria. Envolve trocar personagens imediatamente após gerar Partículas Elementais</td>
-              </tr>
-              <tr>
-                <td>Enabler</td>
-                <td>Personagens que aplicam Elementos para “habilitar” reações</td>
-              </tr>
-            </tbody>
-          </table>
-        </Details>
-        <div className={styles.pros_cons}>
-          <Details titulo="Pros" cor={detailsCor.verde}>
-            <p>Tem um dano altíssimo com investimentos mínimos, conseguindo fazer qualquer conteúdo do jogo. Pode ser jogado sozinho por ter auto-sustain, o que abre slots que seriam de healers para personagens mais agressivos.</p>
-            <p>Tem uma Gameplay simples e pode ser usado de uma distância considerável contra inimigos, evitando tomar dano.</p>
-            <p>É o único personagem no jogo com potencial de dano em área “infinito” no abismo, sendo o melhor DPS do meta atual para conteúdos com múltiplos alvos ou ondas de inimigos, ainda com muita relevância em conteúdos de alvos únicos.</p>
-            <p>Possui uma grande variedade de times, podendo ser usado com essencialmente “qualquer coisa” de elementos diferentes para a sua passiva.</p>
+        <Bloco>
+          <Details titulo="Glossário" id="glossario" cor={detailsCor.branco}>
+            <table className={styles.glossario}>
+              <tbody>
+                <tr>
+                  <td>AOE</td>
+                  <td>Área de Efeito</td>
+                </tr>
+                <tr>
+                  <td>AC</td>
+                  <td>Ataque Carregado</td>
+                </tr>
+                <tr>
+                  <td>E</td>
+                  <td>Habilidade Elemental</td>
+                </tr>
+                <tr>
+                  <td>Q</td>
+                  <td>Supremo</td>
+                </tr>
+                <tr>
+                  <td>ER</td>
+                  <td>Recarga de Energia</td>
+                </tr>
+                <tr>
+                  <td>Stacks</td>
+                  <td>Acúmulo</td>
+                </tr>
+                <tr>
+                  <td>VV</td>
+                  <td>Set de Artefatos Sombra Verde</td>
+                </tr>
+                <tr>
+                  <td>Res</td>
+                  <td>Resistência</td>
+                </tr>
+                <tr>
+                  <td>A1</td>
+                  <td>Ascensão 1</td>
+                </tr>
+                <tr>
+                  <td>A4</td>
+                  <td>Ascensão 4</td>
+                </tr>
+                <tr>
+                  <td>Funneling</td>
+                  <td>Uma das maneiras pelas quais uma unidade pode servir como uma bateria. Envolve trocar personagens imediatamente após gerar Partículas Elementais</td>
+                </tr>
+                <tr>
+                  <td>Enabler</td>
+                  <td>Personagens que aplicam Elementos para “habilitar” reações</td>
+                </tr>
+              </tbody>
+            </table>
           </Details>
-          <Details titulo="Contras" cor={detailsCor.vermelho}>
-            <p>Por seu kit escalar principalmente com HP muitos suportes ficam inutilizáveis, e seu tempo em campo muitas vezes não permite renovação de buffs que têm pouca duração.</p>
-            <p>Na C0, Neuvillette não tem resistência à interrupção, tendo seus ataques carregados cancelados ao sofrer dano.</p>
-            <p>A forma como Neuvillette dá dano não é apropriada para speedruns, existindo opções melhores para dano explosivo em janelas minúsculas de tempo.</p>
-          </Details>
-        </div>
+          <div className={styles.pros_cons}>
+            <Details titulo="Pros" cor={detailsCor.verde}>
+              <p>Tem um dano altíssimo com investimentos mínimos, conseguindo fazer qualquer conteúdo do jogo. Pode ser jogado sozinho por ter auto-sustain, o que abre slots que seriam de healers para personagens mais agressivos.</p>
+              <p>Tem uma Gameplay simples e pode ser usado de uma distância considerável contra inimigos, evitando tomar dano.</p>
+              <p>É o único personagem no jogo com potencial de dano em área “infinito” no abismo, sendo o melhor DPS do meta atual para conteúdos com múltiplos alvos ou ondas de inimigos, ainda com muita relevância em conteúdos de alvos únicos.</p>
+              <p>Possui uma grande variedade de times, podendo ser usado com essencialmente “qualquer coisa” de elementos diferentes para a sua passiva.</p>
+            </Details>
+            <Details titulo="Contras" cor={detailsCor.vermelho}>
+              <p>Por seu kit escalar principalmente com HP muitos suportes ficam inutilizáveis, e seu tempo em campo muitas vezes não permite renovação de buffs que têm pouca duração.</p>
+              <p>Na C0, Neuvillette não tem resistência à interrupção, tendo seus ataques carregados cancelados ao sofrer dano.</p>
+              <p>A forma como Neuvillette dá dano não é apropriada para speedruns, existindo opções melhores para dano explosivo em janelas minúsculas de tempo.</p>
+            </Details>
+          </div>
+        </Bloco>
         <Topico titulo="Dúvidas Frequentes" id="duvidas-frequentes"> 
           <Details titulo={"O Neuvillette precisa de escudo na C0?"} cor={detailsCor.vazio}>
             <p>Não é necessário ter um escudo mesmo na c0. Neuvillette possui a propriedade especial de se mover livremente durante seu ataque carregado, podendo desviar de ataques com facilidade. Todavia, para jogadores mais casuais enfrentando inimigos mais agressivos, um escudo é recomendável pois toda sua rotação é cancelada caso ele seja interrompido. Em cenários onde o foco será apenas fazer os conteúdos do jogo da forma mais rápida possível, é recomendado para jogadores mais experientes usarem opções mais ofensivas como buffers ou DPS fora de campo.
@@ -171,7 +174,23 @@ export default function Home() {
         </Topico>
         <Topico titulo="Status" id="status">
           <Artefato title={"Caçador das Sombras"} iconUrl={"/artefatos/Cacador_das_Sombras.png"}
-          bonus2={"Aumenta o dano causado pelos Ataques normais e carregados em 15%."} bonus4={"Garante um grande aumento na Taxa Crítica caso ocorra variação de HP. Permitindo que Neuvillette acumule rapidamente o efeito completo desse conjunto, de forma consistente e contínua."}/>
+          bonus2={"Aumenta o dano causado pelos Ataques normais e carregados em 15%."} bonus4={"Quando a Vida atual aumenta ou diminui, aumenta a Taxa CRIT em 12%. Esse efeito dura 5s e pode ser acumulado até 3 vezes."}/>
+          <Bloco>
+            <h3>Recomendações de atributos principais nos artefatos do Neuvillette:</h3>
+            <div>
+              <p><b><Hourglass size={15} strokeWidth={3.5}/> Relógio:</b> Vida%</p>
+              <p><b><Filter size={15} strokeWidth={3.5}/> Cálice: </b> Hydro% / Vida%</p>
+              <p><b><Crown size={15} strokeWidth={3.5}/> Coroa: </b> Crítico% / Vida%</p>
+            </div>
+          </Bloco>
+          <Bloco>
+            <h3>Cálice: Hydro ou Vida?</h3>
+            <p>Ambos possuem valor parecido. Porém, em composições com muitos buffs de bônus de dano, como por exemplo com Furina/Kazuha/Xilonen, o cálice de HP% pode ser uma opção muitas vezes melhor, já que também oferece aumentos massivos em seu DPS. Nessas situações, você deve preferir aquele com melhores atributos secundários. (Use o Optimizer para sanar suas dúvidas com clareza).</p>
+          </Bloco>
+          <Bloco>
+            <h3>Coroa: Crítico ou Vida?</h3>
+            <p>Possua a arma assinatura do Neuvillette ou uma arma com Crit, além de ter uma coroa de HP%  com bons atributos secundários de taxa crítica e dano crítico. Caso esses sub-atributos sejam muito bons, essa coroa pode até ultrapassar uma coroa convencional de CRIT (Use o Optimizer para sanar suas dúvidas com clareza).</p>
+          </Bloco>
         </Topico>
       </main>
     </div>

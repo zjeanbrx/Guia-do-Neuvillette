@@ -14,8 +14,8 @@
     padding: 0 0 10px 0;
     border-bottom: 2px solid rgb(29, 29, 29);
 }
-.talento_nome h3:first-of-type {
-    font-weight: 400;
+.talento_nome h3:nth-of-type(2) {
+    font-weight: 200;
 }
 .talento img {
     width: 60px;

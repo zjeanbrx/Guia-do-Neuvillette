@@ -6,7 +6,6 @@ import supremo from '/public/icones/image11.png';
 import a1 from '/public/icones/image20.png';
 import a4 from '/public/icones/image45.png';
 import styles from './talento.module.css'
-import {Sun} from 'lucide-react'
 
 export default function Talento ({imagem, talento, nome, children }) {
 
@@ -31,7 +30,7 @@ export default function Talento ({imagem, talento, nome, children }) {
   return (
     <div className={styles.talento}>
       <div className={styles.talento_nome}>
-        <Image src={imagem} alt='icone'/>
+        <Image src={imagem} alt='icone' placeholder='blur'/>
         <h3>{talento}:</h3>
         <h3>{nome}</h3>
       </div>
