@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import styles from "./page.module.css";
 import detailsCor from "@/componentes/details/details.module.css"
-import Bloco from "@/componentes/bloco";
+import Secao from "@/componentes/secao";
 import Topico from "@/componentes/topico";
 import ImgFull from "@/componentes/imgfull";
 import Details from "@/componentes/details";
@@ -52,7 +52,7 @@ export default function Home() {
         <Topico titulo="Resumo" id="resumo">
           <p>Neuvillette é um personagem T5 Hydro Catalisador com um estilo único de Gameplay, baseado principalmente em seus ataques carregados de dano constante e em área</p>
         </Topico>
-        <Bloco>
+        <Secao>
           <Details titulo="Glossário" id="glossario" cor={detailsCor.branco}>
             <table className={styles.glossario}>
               <tbody>
@@ -120,7 +120,7 @@ export default function Home() {
               <p>A forma como Neuvillette dá dano não é apropriada para speedruns, existindo opções melhores para dano explosivo em janelas minúsculas de tempo.</p>
             </Details>
           </div>
-        </Bloco>
+        </Secao>
         <Topico titulo="Dúvidas Frequentes" id="duvidas-frequentes"> 
           <Details titulo={"O Neuvillette precisa de escudo na C0?"} cor={detailsCor.vazio}>
             <p>Não é necessário ter um escudo mesmo na c0. Neuvillette possui a propriedade especial de se mover livremente durante seu ataque carregado, podendo desviar de ataques com facilidade. Todavia, para jogadores mais casuais enfrentando inimigos mais agressivos, um escudo é recomendável pois toda sua rotação é cancelada caso ele seja interrompido. Em cenários onde o foco será apenas fazer os conteúdos do jogo da forma mais rápida possível, é recomendado para jogadores mais experientes usarem opções mais ofensivas como buffers ou DPS fora de campo.
@@ -175,22 +175,63 @@ export default function Home() {
         <Topico titulo="Status" id="status">
           <Artefato title={"Caçador das Sombras"} iconUrl={"/artefatos/Cacador_das_Sombras.png"}
           bonus2={"Aumenta o dano causado pelos Ataques normais e carregados em 15%."} bonus4={"Quando a Vida atual aumenta ou diminui, aumenta a Taxa CRIT em 12%. Esse efeito dura 5s e pode ser acumulado até 3 vezes."}/>
-          <Bloco>
+          <Secao>
             <h3>Recomendações de atributos principais nos artefatos do Neuvillette:</h3>
             <div>
               <p><b><Hourglass size={15} strokeWidth={3.5}/> Relógio:</b> Vida%</p>
               <p><b><Filter size={15} strokeWidth={3.5}/> Cálice: </b> Hydro% / Vida%</p>
               <p><b><Crown size={15} strokeWidth={3.5}/> Coroa: </b> Crítico% / Vida%</p>
             </div>
-          </Bloco>
-          <Bloco>
+          </Secao>
+          <Secao>
             <h3>Cálice: Hydro ou Vida?</h3>
             <p>Ambos possuem valor parecido. Porém, em composições com muitos buffs de bônus de dano, como por exemplo com Furina/Kazuha/Xilonen, o cálice de HP% pode ser uma opção muitas vezes melhor, já que também oferece aumentos massivos em seu DPS. Nessas situações, você deve preferir aquele com melhores atributos secundários. (Use o Optimizer para sanar suas dúvidas com clareza).</p>
-          </Bloco>
-          <Bloco>
+          </Secao>
+          <Secao>
             <h3>Coroa: Crítico ou Vida?</h3>
             <p>Possua a arma assinatura do Neuvillette ou uma arma com Crit, além de ter uma coroa de HP%  com bons atributos secundários de taxa crítica e dano crítico. Caso esses sub-atributos sejam muito bons, essa coroa pode até ultrapassar uma coroa convencional de CRIT (Use o Optimizer para sanar suas dúvidas com clareza).</p>
-          </Bloco>
+          </Secao>
+          <Secao>
+            <h3>Recarga de Energia:</h3>
+            <div className={styles.recarga}>
+              <table className={styles.tabela_recarga}>
+                <thead>
+                  <tr>
+                    <th>Cenários</th>
+                    <th>R5 Protótipo Ambar</th>
+                    <th>R1 Fluxo Eterno</th>
+                    <th>Outras armas</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Double Hydro com Furina</td>
+                    <td>100–105%</td>
+                    <td>100–115%</td>
+                    <td>110–125%</td>
+                  </tr>
+                  <tr>
+                    <td>Double Electro com Fischl</td>
+                    <td>100–105%</td>
+                    <td>100–110%</td>
+                    <td>120–140%</td>
+                  </tr>
+                  <tr>
+                    <td>Fischl Solo Electro</td>
+                    <td>100–115%</td>
+                    <td>100–120%</td>
+                    <td>130–150%</td>
+                  </tr>
+                  <tr>
+                    <td>Outros times</td>
+                    <td>100–125%</td>
+                    <td>100–130%</td>
+                    <td>140–160%</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </Secao>
         </Topico>
       </main>
     </div>

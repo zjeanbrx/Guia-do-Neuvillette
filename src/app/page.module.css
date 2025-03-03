@@ -86,7 +86,6 @@
     flex: 1 0 250px;
 }
 .glossario {
-    width: 100%;
     border-spacing: 0 15px;
 }
 .glossario td:nth-of-type(2) {
@@ -100,4 +99,25 @@
     font-weight: 600;
     padding: 5px 20px 5px 0;
     border-right: 2px solid rgb(39, 39, 39);
+}
+.tabela_recarga {
+    border-collapse: collapse;
+}
+.tabela_recarga th {
+    font-weight: 400;
+    border: 1px solid rgb(80, 80, 80);
+    padding: 5px 10px;
+}
+.tabela_recarga td {
+    border: 1px solid rgb(44, 44, 44);
+    padding: 5px;
+    text-align: center;
+    white-space: nowrap;
+}
+.tabela_recarga td:first-of-type {
+    text-align: left;
+}
+.recarga {
+    overflow-x: auto;
+    width: 100%;
 }
