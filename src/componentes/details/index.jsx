@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 import styles from './details.module.css';
-import arrow from '../../../public/icones/arrow.png';
+import { ChevronDown } from 'lucide-react';
 
 export default function Details ({id, titulo, children, cor}) {
   
@@ -20,7 +20,7 @@ export default function Details ({id, titulo, children, cor}) {
 
   return (
     <div id={id} className={`${detailsStyle} ${cor}`}>
-      <button onClick={detailsInvert}>{titulo} <Image className={details ? arrowOpen : arrowClosed} src={arrow} width={20} height={20} alt='arrow'/> </button>
+      <button onClick={detailsInvert}>{titulo} <ChevronDown className={details ? arrowOpen : arrowClosed}/></button>
       <div className={details ? detailsOpen : detailsClosed}>{children}</div>
     </div>
   );

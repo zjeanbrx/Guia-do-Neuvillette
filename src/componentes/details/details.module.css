@@ -21,8 +21,8 @@
         background: var(--bg-active)
     }
 }
-.details button img {
-    transition: all 0.2s;
+.details button > * {
+    transition: all 0.5s;
 }
 .details > div {
     margin-top: 10px;
@@ -41,8 +41,10 @@
     animation: fadetxt 1.5s;
 }
 
-.arrow_open {transform: rotate(-90deg);}
-.arrow_closed {transform: rotate(90deg);}
+.arrow_open {
+    transform: rotateX(180deg)
+}
+.arrow_closed {transform: rotate(0deg);}
 
 @keyframes fade {
     0% {opacity: 0; transform: translateY(-15px);}
@@ -72,14 +74,14 @@
 .branco {
     --bg: rgb(12, 12, 12);
     --bg-hover: rgb(24, 24, 24);
-    --bg-active: rgba(73, 73, 73, 0);
+    --bg-active: rgb(27, 27, 27);
     --bs: none;
     --border: rgba(73, 73, 73, 0);
 }
 .vazio {
     --bg: none;
-    --bg-hover: rgb(17, 17, 17);
-    --bg-active: rgb(26, 26, 26);
+    --bg-hover: rgb(12, 12, 12);
+    --bg-active: rgb(15, 15, 15);
     --bs: none;
     --txt: rgb(133, 133, 133);
     --border: rgb(24, 24, 24);
