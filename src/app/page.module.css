@@ -105,11 +105,11 @@
 }
 .tabela_recarga th {
     font-weight: 400;
-    border: 1px solid rgb(80, 80, 80);
+    border: 2px solid rgb(80, 80, 80);
     padding: 5px 10px;
 }
 .tabela_recarga td {
-    border: 1px solid rgb(44, 44, 44);
+    border: 2px solid rgb(44, 44, 44);
     padding: 5px;
     text-align: center;
     white-space: nowrap;
