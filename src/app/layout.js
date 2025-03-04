@@ -5,9 +5,6 @@ export const metadata = {
   description: "Aprenda a usar seu Neuvillette", // Descrição da página
   keywords: ["neuvillette", "guia", "build", "artefatos", "status", "armas"], // Palavras-chave para SEO
   authors: [{ name: "Sun" }], // Autor da página
-  icons: {
-    icon: '/favicon.ico',
-  },
   openGraph: {
     title: "Guia do Neuvillette",
     description: "Aprenda a usar seu Neuvillette",
