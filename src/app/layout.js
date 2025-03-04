@@ -12,7 +12,7 @@ export const metadata = {
     siteName: "Sun guias",
     images: [
       {
-        url: "/geral/Banner.png", // Imagem para preview em redes sociais
+        url: "https://neuvillette-by-sun.vercel.app/geral/Banner.png", // Imagem para preview em redes sociais
         alt: "Banner",
       },
     ],
@@ -21,9 +21,9 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image", // Tipo de card do Twitter
-    title: "uia do Neuvillette",
+    title: "Guia do Neuvillette",
     description: "Aprenda a usar seu Neuvillette",
-    image: "/geral/Banner.png", // Imagem para Twitter
+    image: "https://neuvillette-by-sun.vercel.app/geral/Banner.png", // Imagem para Twitter
   },
 };
 
