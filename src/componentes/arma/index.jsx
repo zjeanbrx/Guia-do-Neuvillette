@@ -35,7 +35,7 @@ export default function Arma ({nome, imagem, children, raridade}) {
         <div className={raridade == "t5" ? t5 : t4}>
           <Image src={imagem} className={styles.arma_imagem} alt={nome} placeholder='blur' quality={100} width={150} height={150}></Image>
         </div>
-        <div>{estrelasQuantidade}</div>
+        <div className={styles.raridade}>{estrelasQuantidade}</div>
         <h3>{nome}</h3>
       {children}
     </div>

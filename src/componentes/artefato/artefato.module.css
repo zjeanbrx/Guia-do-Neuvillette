@@ -9,21 +9,22 @@
     margin: 0 auto;
     border-radius: 20px;
     padding: 15px;
-    border: 2px solid rgb(21, 103, 170);
-    background: rgb(0, 0, 0); 
+    border: 2px solid #d1a045;
     box-shadow: 
-    0px 0px 20px 10px rgba(54, 150, 228, 0.24),
-    0px 0px 5px 5px rgba(54, 150, 228, 0.178),
-    0px 0px 50px 50px rgba(32, 107, 168, 0.137) inset,
-    0px 0px 20px 10px rgba(48, 138, 212, 0.11) inset;
+    0px 0px 20px 10px rgba(228, 182, 54, 0.24),
+    0px 0px 5px 5px rgba(228, 182, 54, 0.178),
+    0px 0px 100px 50px rgba(228, 182, 54, 0.171) inset,
+    0px 0px 20px 10px rgba(228, 182, 54, 0.178) inset;
 }
 .icon {
     width: 100px;
     height: 100px;
-    filter: drop-shadow(-1px 0 1px rgb(35, 222, 255)) 
-    drop-shadow(1px 0px 1px rgb(0, 102, 255)) 
+    filter: 
     drop-shadow(0px 0px 15px rgba(255, 255, 255, 0.26)) 
 }
 .title { 
     font-weight: 400;
+}
+.raridade {
+    font-size: 18px;
 }

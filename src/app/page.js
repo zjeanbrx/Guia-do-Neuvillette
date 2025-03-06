@@ -178,7 +178,7 @@ export default function Home() {
           <Artefato title={"Caçador das Sombras"} iconUrl={"/artefatos/Cacador_das_Sombras.png"}
           bonus2={"Aumenta o dano causado pelos Ataques normais e carregados em 15%."} bonus4={"Quando a Vida atual aumenta ou diminui, aumenta a Taxa CRIT em 12%. Esse efeito dura 5s e pode ser acumulado até 3 vezes."}/>
           <Secao>
-            <h3>Recomendações de atributos principais nos artefatos do Neuvillette:</h3>
+            <h3 style={{marginTop: "20px"}}>Recomendações de atributos principais nos artefatos do Neuvillette:</h3>
             <div>
               <p><b><Hourglass size={15} strokeWidth={3.5}/> Relógio:</b> Vida%</p>
               <p><b><Filter size={15} strokeWidth={3.5}/> Cálice: </b> Hydro% / Vida%</p>
@@ -245,7 +245,7 @@ export default function Home() {
           <Arma nome="Protótipo Âmbar" raridade={"t4"}>
            <p>Fornece bastante HP% por meio de seus status secundários, sendo a melhor arma que pode ser feita sem gastar tiros para Neuvillette. Suas vantagens são a cura e a recarga de energia para todos os membros da equipe, já que em composições com Furina, facilitará o acúmulo do bônus de fanfarra. Como resultado, pode superar até o Esplendor Índigo R5.</p>
           </Arma>
-          <h3 style={{fontWeight: "600"}}>Menções Honrosas:</h3>
+          <h3 style={{fontWeight: "600", marginBottom: "20px"}}>Menções Honrosas:</h3>
           <Arma nome="Oração Perdida aos Ventos Sagrados" raridade={"t5"}>
            <p>Oferece Taxa Crítica e Bônus Elemental , dois status que Neuvillette aprecia. A taxa Crítica e 4 peças de Caçador das Sombras, podem dificultar a construção da build na prática, mas ainda não a tira do pódio. É uma arma mais acessível do que outras escolhas de 5 estrelas, já que os jogadores podem a obter no Banner Padrão.</p>
            <p><b>observação:</b> Para builds sem HP% ou com Taxa Crítica excessiva, o Protótipo Âmbar se torna  uma opção melhor do que a Oração Perdida aos Ventos Sagrados.</p>

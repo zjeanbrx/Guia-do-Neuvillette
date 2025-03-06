@@ -9,6 +9,7 @@ const Artefato = ({ title, iconUrl, bonus2, bonus4 }) => {
         alt={`Ícone do conjunto de artefatos ${title}`}
         className={classes.icon}
       />
+      <div className={classes.raridade}>⭐⭐⭐⭐⭐</div>
       <h3 className={classes.title}>{title}</h3>
       <div className={classes.bonus}>
         <p><b>2 peças:</b></p>
