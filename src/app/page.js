@@ -7,6 +7,7 @@ import Secao from "@/componentes/secao";
 import Topico from "@/componentes/topico";
 import ImgFull from "@/componentes/imgfull";
 import Details from "@/componentes/details";
+import Arma from "@/componentes/arma";
 import { useState } from "react";
 import { Hourglass, Filter, Crown } from 'lucide-react';
 
@@ -36,6 +37,7 @@ export default function Home() {
         <Link onClick={Menu} href="#duvidas-frequentes">Dúvidas Frequentes</Link>
         <Link onClick={Menu} href="#talentos">Talentos</Link>
         <Link onClick={Menu} href="#status">Status</Link>
+        <Link onClick={Menu} href="#armas">Armas</Link>
       </nav>
       <div className={menuEstado ? `${displayBlock} ${fecharMenuDiv}` : displayNone} onClick={Menu}></div>
       <header>
@@ -232,6 +234,25 @@ export default function Home() {
               </table>
             </div>
           </Secao>
+        </Topico>
+        <Topico titulo="Armas" id="armas">
+          <Arma nome="Rito do Fluxo Eterno" raridade={"t5"}>
+           <p>É a arma assinatura do Neuvillette e sua BiS. Oferece uma grande quantidade de CRIT DMG, HP% que aumenta de dano para o AC, e restauração de energia (ER). Logo, além de eliminar a necessidade adicional de ER%, permite também a construção de status mais ofensivos.</p>
+          </Arma>
+          <Arma nome="Sacrifício de Jade" raridade={"t4"}>
+           <p>É uma arma de passe e a segunda melhor na maioria dos cenários por uma margem decente. Oferece uma quantidade razoável de status que o Neuvillette deseja. Possui uma estatística secundária de Taxa Crítica e uma passiva  com um buff elevado de HP%. Porém, este catalisador restringe o tempo de campo a um máximo de 10s; mas não  chega a ser um problema, já que Neuvillette quer rotacionar para atualizar seus buffs. A desvantagem dessa arma, seria o excesso de taxa crítica, tornando difícil o equilíbrio dos status ideais ao ser combinada com 4 peças do conjunto Caçador das Sombras.</p>
+          </Arma>
+          <Arma nome="Protótipo Âmbar" raridade={"t4"}>
+           <p>Fornece bastante HP% por meio de seus status secundários, sendo a melhor arma que pode ser feita sem gastar tiros para Neuvillette. Suas vantagens são a cura e a recarga de energia para todos os membros da equipe, já que em composições com Furina, facilitará o acúmulo do bônus de fanfarra. Como resultado, pode superar até o Esplendor Índigo R5.</p>
+          </Arma>
+          <h3 style={{fontWeight: "600"}}>Menções Honrosas:</h3>
+          <Arma nome="Oração Perdida aos Ventos Sagrados" raridade={"t5"}>
+           <p>Oferece Taxa Crítica e Bônus Elemental , dois status que Neuvillette aprecia. A taxa Crítica e 4 peças de Caçador das Sombras, podem dificultar a construção da build na prática, mas ainda não a tira do pódio. É uma arma mais acessível do que outras escolhas de 5 estrelas, já que os jogadores podem a obter no Banner Padrão.</p>
+           <p><b>observação:</b> Para builds sem HP% ou com Taxa Crítica excessiva, o Protótipo Âmbar se torna  uma opção melhor do que a Oração Perdida aos Ventos Sagrados.</p>
+          </Arma>
+          <Arma nome="Redemoinho das Ondas" raridade={"t4"}>
+           <p>Arma de Natlan que apresenta Recarga de Energia como atributo principal e passivas que aumentam a Vida Máxima, tornando-se uma opção superior ao Protótipo Âmbar a partir do refino 2 ou superior. Apesar de seu excelente desempenho, especialmente em refinos elevados, sua obtenção é limitada exclusivamente a banners, o que pode dificultar refinos maiores. Ainda assim, é uma escolha extremamente poderosa para o Neuvillette.</p>
+          </Arma>
         </Topico>
       </main>
     </div>

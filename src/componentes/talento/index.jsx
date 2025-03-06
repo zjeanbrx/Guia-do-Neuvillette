@@ -30,7 +30,7 @@ export default function Talento ({imagem, talento, nome, children }) {
   return (
     <div className={styles.talento}>
       <div className={styles.talento_nome}>
-        <Image src={imagem} alt='icone' placeholder='blur'/>
+        <Image src={imagem} alt={talento} placeholder='blur'/>
         <h3>{talento}:</h3>
         <h3>{nome}</h3>
       </div>
