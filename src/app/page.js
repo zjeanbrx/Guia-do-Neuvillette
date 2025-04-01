@@ -8,6 +8,7 @@ import Topico from "@/componentes/topico";
 import ImgFull from "@/componentes/imgfull";
 import Details from "@/componentes/details";
 import Arma from "@/componentes/arma";
+import Moon3D from "@/componentes/sun/";
 import { useState } from "react";
 import { Hourglass, Filter, Crown } from 'lucide-react';
 
@@ -254,6 +255,7 @@ export default function Home() {
            <p>Arma de Natlan que apresenta Recarga de Energia como atributo principal e passivas que aumentam a Vida Máxima, tornando-se uma opção superior ao Protótipo Âmbar a partir do refino 2 ou superior. Apesar de seu excelente desempenho, especialmente em refinos elevados, sua obtenção é limitada exclusivamente a banners, o que pode dificultar refinos maiores. Ainda assim, é uma escolha extremamente poderosa para o Neuvillette.</p>
           </Arma>
         </Topico>
+        <Moon3D></Moon3D>
       </main>
     </div>
   );
