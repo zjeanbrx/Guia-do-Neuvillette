@@ -50,6 +50,7 @@ main {
   display: flex;
   flex-flow: column nowrap;
   gap: 50px;
+  background: linear-gradient(90deg, transparent, rgba(0, 0, 0, 0.7), black, rgba(0, 0, 0, 0.7), transparent);
   z-index: 2;
   position: relative;
 }
