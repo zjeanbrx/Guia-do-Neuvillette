@@ -16,7 +16,7 @@ export default function ParticleBackground() {
     mountRef.current.appendChild(renderer.domElement);
 
     // Parâmetros das partículas
-    const particleCount = 1000;
+    const particleCount = 220;
     const particles = new THREE.BufferGeometry();
     const positions = new Float32Array(particleCount * 3);
     const velocities = new Float32Array(particleCount * 3);
@@ -26,7 +26,7 @@ export default function ParticleBackground() {
     for (let i = 0; i < particleCount; i++) {
       positions[i * 3] = Math.random() * 200 - 100;     // x
       positions[i * 3 + 1] = Math.random() * 200 - 100; // y
-      positions[i * 3 + 2] = Math.random() * 200; // z
+      positions[i * 3 + 2] = Math.random() * 120; // z
       
       velocities[i * 3 + 1] = -Math.random() * 0.1 - 0.05; // velocidade y (queda lenta)
 
