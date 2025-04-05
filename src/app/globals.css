@@ -50,8 +50,10 @@ main {
   display: flex;
   flex-flow: column nowrap;
   gap: 50px;
-  background: black;
+  background: rgb(0, 0, 0);
   box-shadow: 0 0 100px 0px black;
+  z-index: 2;
+  position: relative;
 }
 
 main > * {
