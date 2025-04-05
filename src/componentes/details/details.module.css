@@ -84,7 +84,7 @@
     --border: rgba(73, 73, 73, 0);
 }
 .vazio {
-    --bg: none;
+    --bg: black;
     --bg-hover: rgb(12, 12, 12);
     --bg-active: rgb(15, 15, 15);
     --bs: none;
