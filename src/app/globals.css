@@ -36,7 +36,7 @@ body {
   max-width: 100%;
   min-height: 100vh;
   overflow-x: hidden;
-  background: rgb(2, 7, 14);
+  background: rgb(6, 9, 14);
   scroll-padding-top: 100px;
   scroll-behavior: smooth !important;
 }
@@ -50,7 +50,7 @@ main {
   display: flex;
   flex-flow: column nowrap;
   gap: 50px;
-  background: linear-gradient(90deg, transparent, rgba(0, 0, 0, 0.7), black, rgba(0, 0, 0, 0.7), transparent);
+  background: linear-gradient(90deg, transparent, rgb(0, 0, 0), rgb(0, 0, 0), transparent);
   z-index: 2;
   position: relative;
 }
