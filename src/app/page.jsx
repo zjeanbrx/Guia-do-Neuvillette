@@ -9,12 +9,14 @@ import ImgFull from "@/componentes/imgfull";
 import Details from "@/componentes/details";
 import Arma from "@/componentes/arma";
 import ParticleBackground from "@/componentes/background";
+import Personagem from "@/componentes/personagem";
 import { useState } from "react";
 import { Hourglass, Filter, Crown } from 'lucide-react';
 
 import Banner from '../../public/geral/Banner.png';
 import Talento from "@/componentes/talento";
 import Artefato from "@/componentes/artefato";
+import ArmaTabela from "@/componentes/armaTabela";
 
 export default function Home() {
   
@@ -25,7 +27,7 @@ export default function Home() {
   const menuAberto = styles.menu_aberto;
   const menu = styles.menu;
   const [menuEstado, setMenuEstado] = useState(false);
-
+  
   function Menu() {
     setMenuEstado(!menuEstado)
   }
@@ -256,6 +258,83 @@ export default function Home() {
             <Arma nome="Redemoinho das Ondas" raridade={"t4"}>
             <p>Arma de Natlan que apresenta Recarga de Energia como atributo principal e passivas que aumentam a Vida Máxima, tornando-se uma opção superior ao Protótipo Âmbar a partir do refino 2 ou superior. Apesar de seu excelente desempenho, especialmente em refinos elevados, sua obtenção é limitada exclusivamente a banners, o que pode dificultar refinos maiores. Ainda assim, é uma escolha extremamente poderosa para o Neuvillette.</p>
             </Arma>
+            <Secao>
+              <h3>Tabela de Armas Gerais</h3>
+              <p>Foi considerado:</p>
+              <div>
+                <p><b>Neuvillette:</b> C0; 4 Caçadores; HP% / Hydro DMG% / CR or CD - 128% ER req; 2 stacks na A1 </p>
+                <p><b>Kazuha:</b> C0; Espada de Favonius; 4 VV; EM / EM / EM; 31.7% Elem DMG% da A4</p>
+                <p><b>Rotação:</b>{" Neuvillette Q > Kazuha EQ > Neuvillette AC E AC > Kazuha E > Neuv AC E"}</p>
+              </div>
+              <div>
+                <ArmaTabela>
+
+                </ArmaTabela>
+              </div>
+            </Secao>
+          </Topico>
+          <Topico titulo={"Sinergias"} id={"sinergias"}>
+              <Personagem nome={"Xiangling"} valor={"4"} elemento={"pyro"} frase={"Aplicação fora de campo AoE - ideal para times de Vaporização"}>
+                <p>- Possui um grande requerimento de recarga de energia.</p>
+                <p>- Pode utilizar o set de artefatos 'O Instrutor' que aumenta a EM do Time.</p>
+              </Personagem>
+              <Personagem nome={"Dehya"} valor={"3"} elemento={"pyro"} frase={"Mitigação de dano - resistência à interrupção - aplicação Pyro lenta - eficaz para Burn Vape"}>
+                <p>- Aplicação elemental eficaz apenas com um personagem dendro na equipe</p>
+                <p>- Pode utilizar o set de artefatos O Instrutor</p>
+              </Personagem>
+              <Personagem nome={"Furina"} valor={"5"} elemento={"hydro"} frase={"Melhora a aplicação de Hydro para reações de Redemoinho e Cristalização - Oferece um grande bônus de dano - Seu acúmulo de fanfarra é facilitado pelo Neuvillette - Possibilita maior variedade dos outros membros da equipe - Reduz necessidade de ER - Ativa a Ressonância Hydro (aumento de HP)"}>
+                <p>- Nesses times, Furina requer em torno de 130 a 180 de Recarga de Energia, podendo variar dependendo da quantidade de armas de favonius presentes na equipe, de como você afunila as partículas do Neuvillette, ou em composições com Fischl/Raiden.</p>
+              </Personagem>
+              <Personagem nome={"Yelan"} valor={"2"} elemento={"hydro"} frase={"Oferece Bônus de Dano regular devido sua A4 - Reduz requisitos de ER/Uso de favonius - Ativa a Ressonância Hydro (aumento de HP)"}>
+                <p>- Opção viável apenas com a C1 de Neuvillette e na ausência da Furina!</p>
+              </Personagem>
+              <Personagem nome={"Mona"} valor={"2"} elemento={"hydro"} frase={"Ativa a Ressonância Hydro (aumento de HP) -  Seu Supremo aumenta o dano do Time - Reduz os requisitos de ER usando Favonius ou Anel de Hakushin"}>
+                <p>- Seu Supremo oferece grande aumento de dano, porém tem uma curta duração;</p>
+                <p>- Opção viável apenas com a C1 de Neuvillette e na ausência da Furina!</p>
+              </Personagem>
+              <Personagem nome={"Tartaglia"} valor={"4"} elemento={"hydro"} frase={"Não precisa entrar em campo - Aumenta o nível de talento dos ataques normais - Ativa a Ressonância Hydro (aumento de HP) - Boa opção em speedruns - Pode entrar em campo caso necessário para aplicação hydro ou Favonius"}>
+                <p>- Seu Talento Passivo aumenta o nível do Talento de Ataque Normal (mesmo quando nível 10 ou 13).</p>
+              </Personagem>
+              <Personagem nome={"Kazuha"} valor={"5"} elemento={"anemo"} frase={"Melhor opção anemo - Redução da Resistência Hydro - Bônus de dano elemental - Melhora a aplicação de Hydro com seu Supremo - Controle de Grupo - Reduz requisitos de ER/Uso de favonius"}>
+                <p>- Sua ER varia entre 150 a 180, caso você tenha o necessário para usar seu Supremo em todas rotações, recomenda-se optar por mais proficiência para aumentar seu buff de dano elemental.</p>
+                <p>- Pode acabar gastando tempo demais em campo; use a ult dele apenas caso necessário (ex. pegar o terceiro stack com a infusão dos inimigos).</p>
+              </Personagem>
+              <Personagem nome={"Jean"} valor={"3"} elemento={"anemo"} frase={"Boa opção com Furina/Healer Universal - Redução da Resistência Hydro"}>
+                <p>- Opção viável para quem não tem o Kazuha, ou quando ele já está sendo usado em uma composição onde se mostra mais necessário.</p>
+              </Personagem>
+              <Personagem nome={"Xianyun"} valor={"3"} elemento={"anemo"} frase={"Boa opção com Furina/Healer Universal - Redução da Resistência Hydro"}>
+                <p>- Opção viável para quem não tem o Kazuha, ou quando ele já está sendo usado em uma composição onde se mostra mais necessário.</p>
+              </Personagem>
+              <Personagem nome={"Venti"} valor={"3"} elemento={"anemo"} frase={"Extremamente situacional - Controle de Grupo poderoso - uma das melhores opção Anemo para várias ondas de monstros - Melhora a aplicação de Hydro com seu Supremo - Reduz requisitos de ER"}>
+                <p>- Seu Supremo oferece 15 de Energia Flat aos aliados do elemento absorvido, o que é útil para algumas equipes de Vape ou Freeze.</p>
+                <p>- Pode-se utilizar o artefato Sombra Verde para reduzir Resistência Hydro.</p>
+              </Personagem>
+              <Personagem nome={"Sucrose"} valor={"3"} elemento={"anemo"} frase={"Controle de Grupo fraco - Boa opção para times com maior foco em reações elementais"}>
+                <p>- Sua A1/A4 dão EM sendo uma forte opção para times de reações no geral.</p>
+                <p>- Pode-se utilizar o artefato Sombra Verde para reduzir Resistência Hydro.</p>
+              </Personagem>
+              <Personagem nome={"Lynette"} valor={"3"} elemento={"anemo"} frase={"Controle de Grupo fraco - Redução da Resistência Hydro"}>
+                <p>- Sua provocação facilita para o Neuvillette não ser interrompido.</p>
+                <p>- Tem uma leve cura que pode ajudar um pouco no stack de fanfarra da Furina.</p>
+              </Personagem>
+              <Personagem nome={"Beidou"} valor={"4"} elemento={"electro"} frase={"Situacional - Dano fora de campo AoE - Resistência à interrupção - Boa aplicação elemental"}>
+                <p>- Pode desempenhar melhor em dano em conteúdos multi-target (2+ alvos).</p>
+              </Personagem>
+              <Personagem nome={""} valor={""} elemento={""} frase={""}>
+                <p>- </p>
+              </Personagem>
+              <Personagem nome={""} valor={""} elemento={""} frase={""}>
+                <p>- </p>
+              </Personagem>
+              <Personagem nome={""} valor={""} elemento={""} frase={""}>
+                <p>- </p>
+              </Personagem>
+              <Personagem nome={""} valor={""} elemento={""} frase={""}>
+                <p>- </p>
+              </Personagem>
+              <Personagem nome={""} valor={""} elemento={""} frase={""}>
+                <p>- </p>
+              </Personagem>
           </Topico>
         </main>
       </div>

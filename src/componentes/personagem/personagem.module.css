@@ -1,0 +1,64 @@
+.container {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    border-radius: 20px;
+    padding: 25px 15px;
+    gap: 15px;
+}
+
+.personagem_imagem {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px 10px 0 10px;
+    border-radius: 15px;
+    border: 3px solid rgba(255, 255, 255, 0.1)
+}
+
+.icone_valor {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 5px;
+}
+.icone_valor {
+    filter: drop-shadow(0 0 4px rgba(0, 0, 0, 0.2));
+}
+.info {
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(0, 0, 0, 0.25)
+}
+.pyro {
+    background: rgba(255, 0, 0, 0.2);
+    border: 3px solid rgba(255, 0, 0, 0.2)
+}
+
+.hydro {
+    background: rgba(0, 140, 255, 0.2);
+    border: 3px solid rgba(0, 140, 255, 0.2)
+}
+
+.electro {
+    background: rgba(212, 0, 255, 0.2);
+    border: 3px solid rgba(212, 0, 255, 0.2)
+}
+
+.cryo {
+    background: rgba(0, 183, 255, 0.2);
+    border: 3px solid rgba(0, 183, 255, 0.2)
+}
+
+.anemo {
+    background: rgba(0, 255, 179, 0.2);
+    border: 3px solid rgba(0, 255, 179, 0.2)
+}
+
+.geo {
+    background: rgba(134, 56, 4, 0.2);
+    border: 3px solid rgba(134, 56, 4, 0.2)
+}
+
+.dendro {
+    background: rgba(12, 185, 12, 0.2);
+    border: 3px solid rgba(12, 185, 12, 0.2)
+}
