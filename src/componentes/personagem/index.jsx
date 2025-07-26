@@ -47,7 +47,7 @@ export default function Personagem({ nome, valor, frase, children, elemento }) {
           : valor == 5 ? 5
             : valor == 6 ? 6
               : 0;
-    const fillColor = valor == 2 ? '#5d8aa8'
+    const fillColor = valor == 2 ? '#427c4eff'
       : valor == 3 ? '#5d8aa8'
         : valor == 4 ? '#9966cc'
           : valor == 5 ? '#ffbf00'
