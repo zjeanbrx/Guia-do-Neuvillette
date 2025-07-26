@@ -43,33 +43,35 @@ export default function Personagem({ nome, valor, frase, children, elemento }) {
   const renderStars = () => {
     const count = valor == 2 ? 2
       : valor == 3 ? 3
-      : valor == 4 ? 4
-      : valor == 5 ? 5
-      : valor == 6 ? 6
-      : 0;
+        : valor == 4 ? 4
+          : valor == 5 ? 5
+            : valor == 6 ? 6
+              : 0;
     const fillColor = valor == 2 ? '#5d8aa8'
       : valor == 3 ? '#5d8aa8'
-      : valor == 4 ? '#9966cc'
-      : valor == 5 ? '#ffbf00'
-      : valor == 6 ? '#ff033e'
-      : 'gray';
+        : valor == 4 ? '#9966cc'
+          : valor == 5 ? '#ffbf00'
+            : valor == 6 ? '#ff033e'
+              : 'gray';
     return Array.from({ length: count }, (_, index) => <Star key={index} fill={fillColor} stroke={fillColor} />);
   };
 
   const starClass = valor == 2 ? styles.valor_dois
     : valor == 3 ? styles.valor_tres
-    : valor == 4 ? styles.valor_quatro
-    : valor == 5 ? styles.valor_cinco
-    : valor == 6 ? styles.valor_seis
-    : styles.valor_zero;
+      : valor == 4 ? styles.valor_quatro
+        : valor == 5 ? styles.valor_cinco
+          : valor == 6 ? styles.valor_seis
+            : styles.valor_zero;
 
   const elementClass = elemento ? styles[elemento.toLowerCase()] : styles.none;
 
   return (
     <div className={`${styles.container} ${elementClass}`}>
-      <h3>{nome}</h3>
-      <Image src={imagem} alt={nome} width={150} height={150} className={styles.personagem_imagem}/>
-      <p className={`${starClass} ${styles.icone_valor}`}>{renderStars()}</p>
+      <div className={styles.personagem}>
+        <h3>{nome}</h3>
+        <Image src={imagem} alt={nome} width={150} height={150} className={styles.personagem_imagem} />
+        <p className={`${starClass} ${styles.icone_valor}`}>{renderStars()}</p>
+      </div>
       <div className={styles.info}>
         <p><b>{frase}</b></p>
         {children}

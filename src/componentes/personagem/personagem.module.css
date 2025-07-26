@@ -1,12 +1,23 @@
 .container {
     display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
+    flex-flow: row nowrap;
+    align-items: stretch;
     border-radius: 20px;
-    padding: 25px 15px;
+    padding: 20px 20px 20px 15px;
     gap: 15px;
 }
-
+.personagem {
+    display: flex; 
+    align-items: center;
+    flex-flow: column nowrap;
+    gap: 15px;
+    flex-shrink: 0;
+    width: 170px;
+}
+.personagem h3, .personagem p {
+    text-align: center;
+    line-height: 24px;
+}
 .personagem_imagem {
     background: rgba(255, 255, 255, 0.1);
     padding: 20px 10px 0 10px;
@@ -25,40 +36,48 @@
 .info {
     padding: 15px;
     border-radius: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    background: rgba(0, 0, 0, 0.25)
+    background: rgba(0, 0, 0, 0.35);
+    flex-grow: 1;
 }
 .pyro {
-    background: rgba(255, 0, 0, 0.2);
-    border: 3px solid rgba(255, 0, 0, 0.2)
+    background: rgba(255, 0, 0, 0.3);
+    border: 3px solid rgba(255, 0, 0, 0.1)
 }
 
 .hydro {
-    background: rgba(0, 140, 255, 0.2);
-    border: 3px solid rgba(0, 140, 255, 0.2)
+    background: rgba(0, 140, 255, 0.3);
+    border: 3px solid rgba(0, 140, 255, 0.1)
 }
 
 .electro {
-    background: rgba(212, 0, 255, 0.2);
-    border: 3px solid rgba(212, 0, 255, 0.2)
+    background: rgba(212, 0, 255, 0.3);
+    border: 3px solid rgba(212, 0, 255, 0.1)
 }
 
 .cryo {
-    background: rgba(0, 183, 255, 0.2);
-    border: 3px solid rgba(0, 183, 255, 0.2)
+    background: rgba(0, 183, 255, 0.3);
+    border: 3px solid rgba(0, 183, 255, 0.1)
 }
 
 .anemo {
-    background: rgba(0, 255, 179, 0.2);
-    border: 3px solid rgba(0, 255, 179, 0.2)
+    background: rgba(0, 255, 179, 0.3);
+    border: 3px solid rgba(0, 255, 179, 0.1)
 }
 
 .geo {
-    background: rgba(134, 56, 4, 0.2);
-    border: 3px solid rgba(134, 56, 4, 0.2)
+    background: rgba(168, 74, 11, 0.3);
+    border: 3px solid rgba(134, 56, 4, 0.1)
 }
 
 .dendro {
-    background: rgba(12, 185, 12, 0.2);
-    border: 3px solid rgba(12, 185, 12, 0.2)
+    background: rgba(12, 185, 12, 0.3);
+    border: 3px solid rgba(12, 185, 12, 0.1)
+}
+
+@media (max-width: 720px) {
+    .container {
+        flex-flow: column nowrap;
+        align-items: center;
+        padding: 15px 20px 20px 20px
+    }
 }
