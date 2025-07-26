@@ -7,19 +7,20 @@ export default function Personagem({ nome, valor, frase, children, elemento }) {
     Albedo: '/personagens/Albedo.webp',
     Baizhu: '/personagens/Baizhu.webp',
     Beidou: '/personagens/Beidou.webp',
-    Chibi_Raiden: '/personagens/Chibi_Raiden.webp',
-    Chibi_Yae_Miko: '/personagens/Chibi_Yae_Miko.png',
+    Raiden_Shogun: '/personagens/Chibi_Raiden.webp',
+    Yae_Miko: '/personagens/Chibi_Yae_Miko.png',
+    Charlotte: '/personagens/Charlotte.webp',
     Chiori: '/personagens/Chiori.png',
     Citlali: '/personagens/Citlali.png',
     Dehya: '/personagens/Dehya.png',
-    Emilie: '/personagens/Emilie.png',
+    Emillie: '/personagens/Emillie.png',
     Fischl: '/personagens/Fischl.webp',
     Furina: '/personagens/Furina.webp',
     Ganyu: '/personagens/Ganyu.webp',
     Jean: '/personagens/Jean.webp',
     Kachina: '/personagens/Kachina.png',
     Kazuha: '/personagens/Kazuha.webp',
-    Kuki: '/personagens/Kuki.webp',
+    Kuki_Shinobu: '/personagens/Kuki.webp',
     Layla: '/personagens/Layla.webp',
     Lynette: '/personagens/Lynette.png',
     Mona: '/personagens/Mona.webp',
@@ -29,14 +30,15 @@ export default function Personagem({ nome, valor, frase, children, elemento }) {
     Sucrose: '/personagens/Sucrose.webp',
     Tartaglia: '/personagens/Tartaglia.webp',
     Venti: '/personagens/Venti.png',
-    Viajantes: '/personagens/Viajantes.png',
+    Viajante_Dendro: '/personagens/Viajantes.png',
     Xiangling: '/personagens/Xiangling.webp',
     Xianyun: '/personagens/Xianyun.webp',
     Xilonen: '/personagens/Xilonen.png',
     Yelan: '/personagens/Yelan.webp',
     Zhongli: '/personagens/Zhongli.webp',
   };
-  const imagem = personagens[nome] || '/personagens/default.webp';
+
+  const imagem = personagens[nome.replace(' ', '_')];
 
   const renderStars = () => {
     const count = valor == 2 ? 2
