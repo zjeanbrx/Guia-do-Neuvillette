@@ -558,6 +558,17 @@ export default function Home() {
               <TabelaConstelacoes></TabelaConstelacoes>
               <p className={styles.fonte} ><b><a target="_blank" href="https://docs.google.com/spreadsheets/d/1RIN5Clqlqq3h2wLHNQ-wbOSE3lGAT2Y9DYFnC7KqJTg/edit?gid=1820417672#gid=1820417672">Fonte</a></b></p>
             </Secao>
+            <div className={styles.creditos}>
+              <h3>Ajudantes:</h3>
+              <div>
+                <p><b>Jean</b> (jean5021)</p>
+                <p><b>042</b> (deminimigo)</p>
+                <p><b>Alyssa</b> (the.lyssa)</p>
+                <p><b>Brettas</b> </p>
+                <p><b>Caio</b> (hennriiq)</p>
+                <p><b>Nael</b> Naelzx</p>
+              </div>
+            </div>
             <ImgFim imagem={funnyImage} alt={"fim"}/>
           </Topico>
         </main>
