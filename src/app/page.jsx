@@ -131,7 +131,7 @@ export default function Home() {
                 <p>Possui uma grande variedade de times, podendo ser usado com essencialmente “qualquer coisa” de elementos diferentes para a sua passiva.</p>
               </Details>
               <Details titulo="Contras" cor={detailsCor.vermelho}>
-                <p>Por seu kit escalar principalmente com HP muitos suportes ficam inutilizáveis, e seu tempo em campo muitas vezes não permite renovação de buffs que têm pouca duração.</p>
+                <p>Por seu kit escalar principalmente com HP, muitos suportes ficam inutilizáveis, e seu tempo em campo muitas vezes não permite renovação de buffs que têm pouca duração.</p>
                 <p>Na C0, Neuvillette não tem resistência à interrupção, tendo seus ataques carregados cancelados ao sofrer dano.</p>
                 <p>A forma como Neuvillette dá dano não é apropriada para speedruns, existindo opções melhores para dano explosivo em janelas minúsculas de tempo.</p>
               </Details>
@@ -156,7 +156,7 @@ export default function Home() {
             <Details titulo={"Mualani vs Neuvillette"} cor={detailsCor.vazio}>
               <p>Mualani e Neuvillette são ótimas opções como DPS no geral, ambos tendo estilos de Gameplay e focos diferentes. Neuvillette é um personagem extremamente fácil de jogar e focado em dano contínuo, conseguindo fazer qualquer conteúdo do jogo tranquilamente com pouco investimento, sendo “um exército de um homem só”.</p>
               <p>Mualani por outro lado tem um estilo de Gameplay focado em Speedruns, com foco em investimento vertical, fazendo conteúdos mais rapidamente baseado puramente em seu investimento de artefatos e na habilidade do jogador. Além disso, seu time é extremamente barato quando se trata de investimento em gemas essenciais (Primogems), podendo usar diversos personagens dados de graça ou com raridade 4 estrelas.</p>
-              <p>Para a maior parte dos jogadores, Neuvillette tende a ser uma opção melhor de pull por conta de sua capacidade como unidade universal para qualquer conteúdo e situação (que não envolva imunidade hydro); enquanto Mualani tem seu foco nas mãos de jogadores mais experientes e focados no nicho de speedrun.</p>
+              <p>Para a maior parte dos jogadores, Neuvillette tende a ser uma opção melhor de invocação por conta de sua capacidade como unidade universal para qualquer conteúdo e situação (que não envolva imunidade hydro); enquanto Mualani tem seu foco nas mãos de jogadores mais experientes e focados no nicho de speedrun.</p>
             </Details>
             <Details titulo={"Kazuha vs Xilonen"} cor={detailsCor.vazio}>
               <p>Xilonen e Kazuha têm funções semelhantes, mas diferem em como aplicam seus buffs e debuffs. Xilonen reduz a resistência dos inimigos em uma área ampla e fornece bônus elemental, o que é útil contra grupos de inimigos, além de poder curar o personagem ativo. Já Kazuha oferece uma redução de resistência maior, porém por um tempo mais curto, também com bônus elemental, sendo ideal para equipes que usam múltiplos elementos.</p>
@@ -556,6 +556,7 @@ export default function Home() {
                 <p><b>Zhongli:</b> Favonius, 4 peças de Pedra arcaica</p>
               </div>
               <TabelaConstelacoes></TabelaConstelacoes>
+              <p className={styles.fonte} ><b><a target="_blank" href="https://docs.google.com/spreadsheets/d/1RIN5Clqlqq3h2wLHNQ-wbOSE3lGAT2Y9DYFnC7KqJTg/edit?gid=1820417672#gid=1820417672">Fonte</a></b></p>
             </Secao>
             <ImgFim imagem={funnyImage} alt={"fim"}/>
           </Topico>
