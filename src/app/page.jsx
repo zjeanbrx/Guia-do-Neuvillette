@@ -10,6 +10,8 @@ import Details from "@/componentes/details";
 import Arma from "@/componentes/arma";
 import ParticleBackground from "@/componentes/background";
 import Personagem from "@/componentes/personagem";
+import Comp from "@/componentes/comp";
+import CompLinha from "@/componentes/linha";
 import { useState } from "react";
 import { Hourglass, Filter, Crown } from 'lucide-react';
 
@@ -43,6 +45,9 @@ export default function Home() {
           <Link onClick={Menu} href="#talentos">Talentos</Link>
           <Link onClick={Menu} href="#status">Status</Link>
           <Link onClick={Menu} href="#armas">Armas</Link>
+          <Link onClick={Menu} href="#sinergias">Sinergias</Link>
+          <Link onClick={Menu} href="#composicoes">Composições</Link>
+          <Link onClick={Menu} href="#constelacoes">Constelações</Link>
         </nav>
         <div className={menuEstado ? `${displayBlock} ${fecharMenuDiv}` : displayNone} onClick={Menu}></div>
         <header>
@@ -270,6 +275,7 @@ export default function Home() {
                 <ArmaTabela>
 
                 </ArmaTabela>
+                <p className={styles.fonte} ><b><a target="_blank" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vQsCcwyVh-P5mVIyRGUm8_XS49Bka9iLzTz-7cgny5kckk-SRZk4DPkUqi_3tmoGWwPAm_VgJPhuBA1/pubhtml#">Fonte</a></b></p>
               </div>
             </Secao>
           </Topico>
@@ -282,7 +288,7 @@ export default function Home() {
               <p>• Aplicação elemental eficaz apenas com um personagem dendro na equipe</p>
               <p>• Pode utilizar o set de artefatos O Instrutor</p>
             </Personagem>
-            <Personagem nome={"Furina"} valor={"5"} elemento={"hydro"} frase={"Melhora a aplicação de Hydro para reações de Redemoinho e Cristalização - Oferece um grande bônus de dano - Seu acúmulo de fanfarra é facilitado pelo Neuvillette - Possibilita maior variedade dos outros membros da equipe - Reduz necessidade de ER - Ativa a Ressonância Hydro (aumento de HP)"}>
+            <Personagem nome={"Furina"} valor={"6"} elemento={"hydro"} frase={"Melhora a aplicação de Hydro para reações de Redemoinho e Cristalização - Oferece um grande bônus de dano - Seu acúmulo de fanfarra é facilitado pelo Neuvillette - Possibilita maior variedade dos outros membros da equipe - Reduz necessidade de ER - Ativa a Ressonância Hydro (aumento de HP)"}>
               <p>• Nesses times, Furina requer em torno de 130 a 180 de Recarga de Energia, podendo variar dependendo da quantidade de armas de favonius presentes na equipe, de como você afunila as partículas do Neuvillette, ou em composições com Fischl/Raiden.</p>
             </Personagem>
             <Personagem nome={"Yelan"} valor={"2"} elemento={"hydro"} frase={"Oferece Bônus de Dano regular devido sua A4 - Reduz requisitos de ER/Uso de favonius - Ativa a Ressonância Hydro (aumento de HP)"}>
@@ -350,7 +356,7 @@ export default function Home() {
             <Personagem nome={"Viajante Dendro"} valor={"2"} elemento={"dendro"} frase={"Disponível para todos os jogadores - Dano fora de campo AoE - Boa aplicação elemental - Buffs do elemento absorvido"}>
               <p>• Problema com ER: Precisa de muita ER para usar o Supremo em cada rotação, especialmente em solo Dendro.</p>
             </Personagem>
-            <Personagem nome={"Emillie"} valor={"3"} elemento={"dendro"} frase={"Dano fora de campo AoE - Boa aplicação elemental - Reduz requisitos de ER/Uso de favonius - Facilita reações de Vaporização"}>
+            <Personagem nome={"Emilie"} valor={"3"} elemento={"dendro"} frase={"Dano fora de campo AoE - Boa aplicação elemental - Reduz requisitos de ER/Uso de favonius - Facilita reações de Vaporização"}>
               <p>• A aplicação Hydro constante pode dificultar a reação de queimadura e reduzir o dano de Emilie.</p>
               <p>• O Dano de Emilie vem das passivas ativadas pelo Burn, não do efeito de Burn diretamente.</p>
             </Personagem>
@@ -387,8 +393,134 @@ export default function Home() {
               <p>• Pode usar 4 peças de Pedra Arcaica para oferecer 35% de dano elemental ao absorver um cristal, e a Lança  Favonius para reduzir a necessidade de ER.</p>
             </Personagem>
           </Topico>
-          <Topico titulo={"Composições"} id={"sinergias"}>
+          <Topico titulo={"Composições"} id={"composicoes"}>
             <p><b>Curiosidade:</b> Em times com um Geo que consegue usar Pergaminho (Set de Natlan que buffa 40% de Bônus elemental), você pode colocar por exemplo a Layla, que não tem um set específico para essa equipe e pode optar por usar Pedra Arcaica, Você só precisa usar a Xilonen antes para criar o cristalizar Hydro e pegar o cristalizar com a Layla por exemplo.</p>
+            <Secao>
+              <h3 style={{ fontWeight: '600' }}>HyperCarries</h3>
+              <p>Times de Hypercarries, no geral, são focados unicamente em buffar e garantir o maior dano possível de Neuvillette. Esses escalam muito bem com investimento no Neuvillette, não apenas por meio de Constelações e armas BiS, mas também por meio da qualidade dos artefatos.</p>
+              <p>Nota: Atualmente Xilonen é uma substituta direta do Kazuha, sendo assim, em composições onde cite o Kazuha, naturalmente pode ser trocado pela xilonen.</p>
+              <Comp titulo={"Neuvillette - Furina - Kazuha - Xilonen"} texto={"Esse é seu melhor time Hypercarry, contando com uma sinergia absurda, tendo duas unidades que reduzem RES, dão bônus de dano elemental, junto com a cura da xilonen que sinergizar diretamente com a Furina, aumentando o ganho de Fanfarra e dando mais DMG% para o time, sendo o time perfeito para Neuvillette atualmente."} rotacao={"Neuvillette E > Furina E > Xilonen EQ N2 > Kazuha EQ > Furina Q > Neuvillette AC E AC Q > Xilonen E N2 > Kazuha E > Neuvillette 2x AC"}>
+                <div className={styles.display_none}></div>
+                <CompLinha a={"Neuvillette"} b={"Furina"} c={"Kazuha"} d={"Xilonen"} />
+              </Comp>
+
+              <Comp titulo={"Neuvillette - Furina - Kazuha - Zhongli"} texto={"Esse é um dos seus times de Hypercarry antes da existência da Xilonen, contando com uma sinergia absurda,  Zhong também pode ser substituído por Baizhu ou Charlotte nesse time."} rotacao={"Neuvillette E > Furina E > Zhongli E > Kazuha E Q > Furina Q > Neuvillette AC E AC Q > Kazuha E > Neuvillette 2x AC"}>
+                <div className={styles.display_none}></div>
+                <CompLinha a={"Neuvillette"} b={"Furina"} c={"Kazuha"} d={"Zhongli"} />
+              </Comp>
+
+              <Comp titulo={"Neuvillette - Furina - Jean - Fischl"} texto={"Normalmente Jean será a melhor opção Anemo nesse time, o que se deve ao fato de sua cura ajudar a Furina stackar a Fanfarra facilmente, além de  poder carregar 4 peças de VV, tirando resistência hydro dos inimigos. Existem opções de T4/T5 anemos que podem ser usados nos lugares da Jean, tais como: Sayu, Lynette e Xianyun, as quais são opções que podem substituir Jean pela cura, além de  possibilitarem a utilização do set de VV."} rotacao={"Neuvillette E > Furina E Q > Jean E Q > Fischl E > Neuvillette AC Q E AC > Jean E > Fischl Q > Neuvillette 2x AC"}>
+                <div className={styles.display_none}></div>
+                <CompLinha a={"Neuvillette"} b={"Furina"} c={"Jean"} d={"Fischl"} />
+              </Comp>
+
+              <Comp titulo={"Neuvillette - Furina - Jean - Zhongli/Xilonen"} texto={"Esse time pode usar Kazuha, mas enfrenta um problema: sem Healers e com Furina, todos os aliados acabam com 50% de HP na segunda rotação, o que dificulta o acúmulo da fanfarra de Furina com Neuvillette. Embora funcione com Kazuha, a diferença de DPS é mínima em comparação à Jean, o que pode tornar mais vantajoso substituir Kazuha e o colocar em um time mais relevante."} rotacao={"Neuvillette E > Furina E Q > Zhongli E Hold (Segurado) > Jean E Q > Neuvillette AC Q E AC > Zhongli E Hold (Segurado) > Jean E > Neuvillette 2x AC"}>
+                <CompLinha a={"vazio"} b={"vazio"} c={"vazio"} d={"Xilonen"} />
+                <CompLinha a={"Neuvillette"} b={"Furina"} c={"Jean"} d={"Zhongli"} />
+              </Comp>
+            </Secao>
+            <Secao>
+              <h3 style={{ fontWeight: '600' }}>HyperCarries Sem Furina</h3>
+              <p>Nessa composição você pode usar a maioria dos anemos disponíveis, pois não há necessidade de um healer sem a Furina. O Flex nesse time pode ser o Zhongli, Layla e Baizhu, por exemplo, tendo outros Flexes que mencionei no Guia que poderá usar também.</p>
+              <Comp titulo={"Neuvillette - Yelan - Kazuha - Zhongli/Xilonen"} texto={"Como dito anteriormente, esse será o Hypercarry sem Furina mais forte que você conseguirá com sua C1, possuindo um buff grande e longo, o que permite ser bem flexível para as rotações grandes com Neuvillette."} rotacao={"Neuvillette E > Kazuha EQ > Zhongli E Hold (Segurado) > Yelan Q E > Neuvillette AC E Q > Kazuha E >  Neuvillette 2x AC"}>
+                <CompLinha a={"vazio"} b={"vazio"} c={"vazio"} d={"Xilonen"} />
+                <CompLinha a={"Neuvillette"} b={"Yelan"} c={"Kazuha"} d={"Zhongli"} />
+              </Comp>
+              <Comp titulo={"Neuvillette - Tartaglia - Kazuha - Zhongli/Xilonen"} texto={"Tartaglia serve apenas para o buff de AA +1 e Double Hydro, porém você pode usar seu supremo nesse time, no fim da rotação."} rotacao={"Neuvillette E > Kazuha Q > Zhongli E Hold (Segurado) > Neuvillette AC Q E AC > Kazuha E > Zhongli E Hold (Segurado) > Neuvillette 2x AC"}>
+                <CompLinha a={"vazio"} b={"vazio"} c={"vazio"} d={"Xilonen"} />
+                <CompLinha a={"Neuvillette"} b={"Tartaglia"} c={"Kazuha"} d={"Zhongli"} />
+              </Comp>
+              <Comp titulo={"Neuvillette - Mona - Kazuha - Zhongli/Xilonen"} texto={"Mona é uma opção usável de segundo Hydro com Neuvillette, seu Supremo causa um debuff no inimigo de até 60%, porém sua baixa duração a torna uma opção pior do que os outros Hydros, no geral."} rotacao={"Neuvillette E > Kazuha EQ > Zhongli E Hold (Segurado) > Mona E Q > Neuvillette AC Q E AC > Kazuha E > Neuvillette 2x AC"}>
+                <CompLinha a={"vazio"} b={"vazio"} c={"vazio"} d={"Xilonen"} />
+                <CompLinha a={"Neuvillette"} b={"Mona"} c={"Kazuha"} d={"Zhongli"} />
+              </Comp>
+              <Comp titulo={"Neuvillette - Kazuha - Fischl - Zhongli/Xilonen"} texto={"Esse time era o seu antigo Hypercarry antes da existência da Furina, caso você não tenha Furina, mas tenha todos esses personagens citados,será um dos seus melhores times. Caso você possua a C1 de Neuvillette, dê uma olhada nos times abaixo, onde usamos double hydros sem ter a furina, caso você não a tenha."} rotacao={"Neuvillette E > Kazuha Q > Zhongli E Hold (Segurado)  > Fischl E > Kazuha E > Neuvillette AC Q E AC > Kazuha E > Zhongli E Hold (Segurado) > Fischl Q > Neuvillette 2x AC"}>
+                <CompLinha a={"vazio"} b={"vazio"} c={"vazio"} d={"Xilonen"} />
+                <CompLinha a={"Neuvillette"} b={"Kazuha"} c={"Fischl"} d={"Zhongli"} />
+              </Comp>
+            </Secao>
+            <Secao>
+              <h3 style={{ fontWeight: '600' }}>Electro-Charged</h3>
+              <p>Composição padrão de Electro-Charged, a qual, normalmente, tem 2 electros no time. É importante dizer que Fischl sempre estará em times de electro charged devido à sua A4, dano constante e alto, além de ser excelente bateria, principalmente para Yae e Beidou.</p>
+              <Comp titulo={"Neuvillette - Fischl - Yae - Kazuha/Zhongli/Xilonen"} texto={"Fischl causa muito dano pessoal e serve de bateria para Yae Miko que, por sua vez, tem um alto dano pessoal, além de ser  bem flexível nessa composição."} rotacao={"Neuvillette Q > Kazuha Q > Fischl E > Yae Miko 3x E > Kazuha E > Neuvillette 2x AC E > Kazuha E > Yae Miko Q 3x E> Fischl Q > Neuvillette AC E AC"}>
+                <CompLinha a={"vazio"} b={"vazio"} c={"vazio"} d={"Xilonen"} />
+                <CompLinha a={"Neuvillette"} b={"Fischl"} c={"Yae Miko"} d={"Kazuha"} />
+                <CompLinha a={"vazio"} b={"vazio"} c={"vazio"} d={"Zhongli"} />
+              </Comp>
+              <Comp titulo={"Neuvillette - Fischl - Beidou - Kazuha/Zhongli/Xilonen"} texto={"Fischl causa muito dano pessoal com sua Habilidade Elemental e A4, servindo de bateria para Beidou, a qual tem problemas, normalmente, com sua ER. Beidou é uma ótima opção visto que ela brilha quando está contra múltiplos inimigos."} rotacao={"Neuvillette Q > Kazuha Q > Beidou EQ > Kazuha E > Fischl E > Neuvillette E  2x AC> Kazuha E > Fischl Q > Beidou E > Neuvillette E AC"}>
+                <CompLinha a={"vazio"} b={"vazio"} c={"vazio"} d={"Xilonen"} />
+                <CompLinha a={"Neuvillette"} b={"Fischl"} c={"Beidou"} d={"Kazuha"} />
+                <CompLinha a={"vazio"} b={"vazio"} c={"vazio"} d={"Zhongli"} />
+              </Comp>
+            </Secao>
+            <Secao>
+              <h3 style={{ fontWeight: '600' }}>Vaporização</h3>
+              <p>Times de Vaporize,no geral, são uma opção usada principalmente para Speedruns, onde temos números extremamente altos devido às reações de vaporização que podem deixar qualquer jogador feliz, normalmente esses times tendem a ser usados com personagens dendro no geral, por conta do Burn, porém pode ser usado tranquilamente sem personagens dendro, trocando-os por algum personagem anemos ou flex.</p>
+              <Comp titulo={"Neuvillette - Xiangling - Kazuha - Furina"} texto={"Uma variação do time Hypercarry do Neuvillette, essa composição é uma das melhores quando se trata de speedruns pelo fato da alta constância da Xiangling de aplicar pyro, fazendo você vaporizar tanto a furina quanto o Neuvillette, dando bastante dano em praticamente todas as ocasiões."} rotacao={"Neuvillette E > Kazuha Q > Xiangling Q E > Furina E Q > Neuvillette AC E AC Q > Kazuha E > Xiangling E > Neuvillette 2x AC"}>
+                <div className={styles.display_none}></div>
+                <CompLinha a={"Neuvillette"} b={"Xiangling"} c={"Kazuha"} d={"Furina"} />
+              </Comp>
+              <Comp titulo={"Neuvillette - Dehya - Nahida - Kazuha/Xilonen"} texto={"Um dos times de vaporização mais conhecidos do Neuvillette. Nesse time, Dehya fornece resistência à interrupção e aplica Pyro para vapes, já Nahida consegue fazer algumas reações de burn com Dehya, o que torna o Vape um pouco mais constante."} rotacao={"Nahida EQ > Neuvillette E Q > Kazuha E Q > Dehya 2x E > Neuvillette AC E 2x AC"}>
+                <CompLinha a={"vazio"} b={"vazio"} c={"vazio"} d={"Xilonen"} />
+                <CompLinha a={"Neuvillette"} b={"Dehya"} c={"Nahida"} d={"Kazuha"} />
+              </Comp>
+              <Comp titulo={"Neuvillette - Xiangling - Nahida - Furina"} texto={"Neuvillette e Furina é uma opção muito boa, principalmente quando se trata de aumentar o dano de Neuvillette, além de ter a Xiangling que aplicará Pyro constantemente, temos a Nahida que fará reações de Burn e causa um dano considerável com sua Habilidade Elemental (É recomendado nesses times a xiangling ter por volta de 270~300 de ER)."} rotacao={"Neuvillette E > Nahida E Q > Xiangling Q E > Furina E Q > Neuvillette AC E AC Q > Nahida E > Xiangling E > Neuvillette 2x AC"}>
+                <div className={styles.display_none}></div>
+                <CompLinha a={"Neuvillette"} b={"Xiangling"} c={"Nahida"} d={"Furina"} />
+              </Comp>
+              <Comp titulo={"Neuvillette - Xiangling - Kazuha - Zhongli/Xilonen"} texto={"Esse é um dos time que, além de números grandes, tem um conforto incrível devido ao Zhongli, o qual fornece shield, além de contar com um debuff universal nos inimigos de resistência e o possível uso de 4 peças de pedra arcaica, tornando-o uma opção incrível para times sem dendro que fazem vaporização (É recomendado nesses times a xiangling ter por volta de 270~300 de ER)."} rotacao={"Neuvillette Q > Zhongli E Hold (Segurado) > Kazuha E > Xiangling Q E > Neuvillette 2x AC E> Kazuha Q E> Zhongli E Hold (Segurado) > Xiangling E > Neuvillette AC E AC"}>
+                <CompLinha a={"vazio"} b={"vazio"} c={"vazio"} d={"Xilonen"} />
+                <CompLinha a={"Neuvillette"} b={"Xiangling"} c={"Kazuha"} d={"Zhongli"} />
+              </Comp>
+              <Comp titulo={"Neuvillette - Xiangling - Emilie - Zhongli/Xilonen/Kazuha"} texto={"Esse é o novo time que Emilie faz com Neuvillette, onde tem tudo que a Emilie precisa, um Pyro para ativar sua A1 e A4, um Shield para proteger Neuvillette dos Burgeons e demais reações ligados ao Pyro, sem contar seu alto dano como Sub Dps nesse time (É recomendado nesses times a xiangling ter por volta de 270~300 de ER)."} rotacao={""}>
+                <CompLinha a={"vazio"} b={"vazio"} c={"vazio"} d={"Xilonen"} />
+                <CompLinha a={"Neuvillette"} b={"Xiangling"} c={"Emilie"} d={"Zhongli"} />
+                <CompLinha a={"vazio"} b={"vazio"} c={"vazio"} d={"Kazuha"} />
+              </Comp>
+            </Secao>
+            <Secao>
+              <h3 style={{ fontWeight: '600' }}>HyperBloom</h3>
+              <p>Esta é uma opção viável dado que Neuvillette consegue aplicar Hydro de forma consistente, mesmo que outros Hydros possam ser mais eficientes, devido sua aplicação Hydro ser melhor e ser fora de campo, o que gera maior valor nos times de Hyperbloom . Ainda assim, é considerado uma opção viável para aqueles que ainda não possuem melhores aplicadores hydro, porém querem se utilizar dessa reação.</p>
+              <Comp titulo={"Neuvillette - Raiden/Kuki - Nahida - Fischl"} texto={"Caso utilizar a Kuki no lugar da Raiden a rotação abaixo se mantém igual, apenas mudando o ‘’Raiden E’’ por ‘’Kuki E’’."} rotacao={"Nahida EQ > Raiden E > Fischl E > Neuvillette E AC Q AC > Fischl Q > Neuvillette AC E AC"}>
+                <CompLinha a={"vazio"} b={"Kuki Shinobu"} c={"vazio"} d={"vazio"} />
+                <CompLinha a={"Neuvillette"} b={"Raiden Shogun"} c={"Nahida"} d={"Fischl"} />
+              </Comp>
+
+              <Comp titulo={"Neuvillette - Raiden - Baizhu - Furina"} texto={"Caso utilizar a Kuki no lugar da Raiden a rotação abaixo se mantém igual, apenas mudando o ‘’Raiden E’’ por ‘’Kuki E’’."} rotacao={"Neuvillette Q > Raiden E > Furina EQ > Baizhu EQ > Neuvillette 2x AC E AC"}>
+                <CompLinha a={"vazio"} b={"Kuki Shinobu"} c={"vazio"} d={"vazio"} />
+                <CompLinha a={"Neuvillette"} b={"Raiden Shogun"} c={"Baizhu"} d={"Furina"} />
+              </Comp>
+
+              <Comp titulo={"Neuvillette - Kuki - Nahida - Furina"} texto={"Kuki e Furina têm uma sinergia consideravelmente interessante no Hyperbloom, devido ao fato de sua cura ajudar no stack de fanfarra."} rotacao={"Neuvillette E > Furina E > Kuki Q > Nahida EQ > Furina Q > Kuki E > Neuvillette AC E AC Q > Nahida E > Neuvillette 2x AC"}>
+                <div className={styles.display_none}></div>
+                <CompLinha a={"Neuvillette"} b={"Kuki Shinobu"} c={"Nahida"} d={"Furina"} />
+              </Comp>
+
+              <Comp titulo={"Neuvillette - Kuki - Viajante Dendro - Collei"} texto={"Time mais “barato” de Hyperbloom, onde o jogo dá praticamente todos personagens do time."} rotacao={"Neuvillette E > Dendro Traveler EQ > Kuki E > Collei QE > Neuvillette AC E Q AC > Dendro Traveler E > Kuki E > Collei > QE > Neuvillette 2x AC"}>
+                <div className={styles.display_none}></div>
+                <CompLinha a={"Neuvillette"} b={"Kuki Shinobu"} c={"Viajante Dendro"} d={"Collei"} />
+              </Comp>
+            </Secao>
+            <Secao>
+              <h3 style={{ fontWeight: '600' }}>Freeze</h3>
+              <Comp titulo={"Neuvillette - Furina - Ganyu - Kazuha/Lynette/Anemo"} texto={"Um dos times mais fortes de Neuvillette Freeze, mesmo não tendo um healer, Furina ainda tem valor nesse time, Ganyu colabora com o dano geral do time e no controle de inimigos, através do Freeze, o que torna menos necessário um Shielder ou um healer."} rotacao={"Furina E > Neuvillette E > Kazuha Q > Ganyu EQ > Furina Q > Kazuha E > Neuvillette AC Q E AC> Kazuha E > Ganyu E > Neuvillette 2x AC"}>
+                <CompLinha a={"vazio"} b={"vazio"} c={"vazio"} d={"Anemo"} />
+                <CompLinha a={"Neuvillette"} b={"Furina"} c={"Ganyu"} d={"Kazuha"} />
+                <CompLinha a={"vazio"} b={"vazio"} c={"vazio"} d={"Lynette"} />
+              </Comp>
+              <Comp titulo={"Neuvillette - Furina - Kazuha - Charlotte"} texto={"Uma outra variação de Hypercarry do Neuvillette muito forte, Charlotte tem uma cura sensacional e pode usar 4 peças de Canção do Passado, o que aumenta consideravelmente o dano do AC de Neuvillette."} rotacao={"Neuvillette E > Furina E Q > Kazuha E Q > Charlotte E(Q) > Neuvillette AC Q E AC > Kazuha E > Neuvillette 2x AC"}>
+                <div className={styles.display_none}></div>
+                <CompLinha a={"Neuvillette"} b={"Furina"} c={"Kazuha"} d={"Charlotte"} />
+              </Comp>
+              <Comp titulo={"Neuvillette - Furina - Lynette - Charlotte"} texto={"Uma variação do time citado acima para quem não tem o Kazuha."} rotacao={"Neuvillette E > Furina E Q > Lynette Q E > Charlotte E(Q) > Neuvillette AC Q E AC > Lynette E > Neuvillette 2x AC"}>
+                <div className={styles.display_none}></div>
+                <CompLinha a={"Neuvillette"} b={"Furina"} c={"Lynette"} d={"Charlotte"} />
+              </Comp>
+            </Secao>
+            <p className={styles.fonte} ><b><a target="_blank" href="https://docs.google.com/spreadsheets/d/10XyjMxeWu59gFDU9VVSsmG0MTlh8r7RevRfa7Bk9r-0/edit?gid=1579367017#gid=1579367017">Fonte</a></b></p>
+          </Topico>
+          <Topico titulo={"Constelações"} id={"constelacoes"} >
+
           </Topico>
         </main>
       </div>

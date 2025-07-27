@@ -19,10 +19,10 @@
     line-height: 24px;
 }
 .personagem_imagem {
-    background: rgba(255, 255, 255, 0.1);
-    padding: 20px 10px 0 10px;
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
     border-radius: 15px;
-    border: 3px dashed rgba(255, 255, 255, 0.05)
+    border: 2px solid rgba(255, 255, 255, 0.3);
 }
 
 .icone_valor {
@@ -41,37 +41,72 @@
 }
 .pyro {
     background: rgba(255, 0, 0, 0.3);
-    border: 3px solid rgba(255, 0, 0, 0.1)
+    border: 3px solid rgba(255, 40, 40, 0.5);
+    box-shadow: 
+    0px 0px 20px 10px rgba(255, 40, 40, 0.1),
+    0px 0px 5px 5px rgba(255, 40, 40, 0.2),
+    0px 0px 30px 10px rgba(255, 40, 40, 0.3) inset,
+    0px 0px 20px 10px rgba(255, 40, 40, 0.2) inset;
 }
 
 .hydro {
     background: rgba(0, 140, 255, 0.3);
-    border: 3px solid rgba(0, 140, 255, 0.1)
+    border: 3px solid rgba(56, 165, 255, 0.5);
+    box-shadow: 
+    0px 0px 20px 10px rgba(54, 135, 228, 0.1),
+    0px 0px 5px 5px rgba(54, 135, 228, 0.2),
+    0px 0px 30px 10px rgba(54, 135, 228, 0.3) inset,
+    0px 0px 20px 10px rgba(54, 135, 228, 0.2) inset;
 }
 
 .electro {
     background: rgba(212, 0, 255, 0.3);
-    border: 3px solid rgba(212, 0, 255, 0.1)
+    border: 3px solid rgba(221, 54, 255, 0.5);
+    box-shadow: 
+    0px 0px 20px 10px rgba(213, 54, 228, 0.1),
+    0px 0px 5px 5px rgba(213, 54, 228, 0.2),
+    0px 0px 30px 10px rgba(213, 54, 228, 0.3) inset,
+    0px 0px 20px 10px rgba(213, 54, 228, 0.2) inset;
 }
 
 .cryo {
     background: rgba(0, 183, 255, 0.3);
-    border: 3px solid rgba(0, 183, 255, 0.1)
+    border: 3px solid rgba(61, 200, 255, 0.5);
+    box-shadow: 
+    0px 0px 20px 10px rgba(0, 183, 255, 0.1),
+    0px 0px 5px 5px rgba(0, 183, 255, 0.2),
+    0px 0px 30px 10px rgba(0, 183, 255, 0.3) inset,
+    0px 0px 20px 10px rgba(0, 183, 255, 0.2) inset;
 }
 
 .anemo {
     background: rgba(0, 255, 179, 0.3);
-    border: 3px solid rgba(0, 255, 179, 0.1)
+    border: 3px solid rgba(54, 255, 195, 0.5);
+    box-shadow: 
+    0px 0px 20px 10px rgba(0, 255, 179, 0.1),
+    0px 0px 5px 5px rgba(0, 255, 179, 0.2),
+    0px 0px 30px 10px rgba(0, 255, 179, 0.3) inset,
+    0px 0px 20px 10px rgba(0, 255, 179, 0.2) inset;
 }
 
 .geo {
-    background: rgba(168, 74, 11, 0.3);
-    border: 3px solid rgba(134, 56, 4, 0.1)
+    background: rgba(214, 90, 8, 0.3);
+    border: 3px solid rgba(255, 137, 59, 0.4);
+    box-shadow: 
+    0px 0px 20px 10px rgba(214, 90, 8, 0.1),
+    0px 0px 5px 5px rgba(214, 90, 8, 0.2),
+    0px 0px 30px 10px rgba(214, 90, 8, 0.3) inset,
+    0px 0px 20px 10px rgba(214, 90, 8, 0.2) inset;
 }
 
 .dendro {
     background: rgba(12, 185, 12, 0.3);
-    border: 3px solid rgba(12, 185, 12, 0.1)
+    border: 3px solid rgba(43, 255, 43, 0.4);
+    box-shadow: 
+    0px 0px 20px 10px rgba(12, 185, 12, 0.1),
+    0px 0px 5px 5px rgba(12, 185, 12, 0.2),
+    0px 0px 30px 10px rgba(12, 185, 12, 0.3) inset,
+    0px 0px 20px 10px rgba(12, 185, 12, 0.2) inset;
 }
 
 @media (max-width: 720px) {

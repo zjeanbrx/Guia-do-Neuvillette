@@ -13,7 +13,7 @@ export default function Personagem({ nome, valor, frase, children, elemento }) {
     Chiori: '/personagens/Chiori.png',
     Citlali: '/personagens/Citlali.png',
     Dehya: '/personagens/Dehya.png',
-    Emillie: '/personagens/Emillie.png',
+    Emilie: '/personagens/Emilie.png',
     Fischl: '/personagens/Fischl.webp',
     Furina: '/personagens/Furina.webp',
     Ganyu: '/personagens/Ganyu.webp',
@@ -47,13 +47,20 @@ export default function Personagem({ nome, valor, frase, children, elemento }) {
           : valor == 5 ? 5
             : valor == 6 ? 6
               : 0;
-    const fillColor = valor == 2 ? '#427c4eff'
-      : valor == 3 ? '#5d8aa8'
-        : valor == 4 ? '#9966cc'
-          : valor == 5 ? '#ffbf00'
-            : valor == 6 ? '#ff033e'
+    const fillColor = valor == 2 ? '#549e63ff'
+      : valor == 3 ? '#689ec2ff'
+        : valor == 4 ? '#ae76e6ff'
+          : valor == 5 ? '#ffc71fff'
+            : valor == 6 ? '#ff194fff'
               : 'gray';
-    return Array.from({ length: count }, (_, index) => <Star key={index} fill={fillColor} stroke={fillColor} />);
+    return Array.from({ length: count }, (_, index) => (
+      <Star
+        key={index}
+        fill={fillColor}
+        stroke={fillColor}
+        style={{ filter: `drop-shadow(0 0 5px ${fillColor})` }}
+      />
+    ));
   };
 
   const starClass = valor == 2 ? styles.valor_dois

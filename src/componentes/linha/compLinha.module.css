@@ -1,0 +1,19 @@
+.container {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 15px;
+}
+.imagem_container {
+    height: 70px;
+    width: 70px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.raridade5 {
+    background: linear-gradient(180deg, #955f34, #bb7735);
+    box-shadow: 0 0 8px #bb7735;
+}
+.raridade4 {
+    background: linear-gradient(180deg, #675c99, #a486c5);
+    box-shadow: 0 0 8px #bc99e0;
+}

@@ -121,3 +121,9 @@
     overflow-x: auto;
     width: 100%;
 }
+.fonte {
+    font-size: 16px;
+    color: white;
+    font-weight: 500;
+    text-decoration: underline;
+}
