@@ -20,7 +20,7 @@ b{color: white; font-weight: 400;}
 }
 
 :root {
-  --header: rgba(0, 0, 0, 0.87);
+  --header: rgba(0, 0, 0, 0.6);
   --azul-1: rgb(64, 164, 231);
   --azul-2: rgb(62, 135, 196);
   --azul-3: rgb(27, 94, 148);

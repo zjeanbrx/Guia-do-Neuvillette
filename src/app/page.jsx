@@ -6,6 +6,7 @@ import detailsCor from "@/componentes/details/details.module.css"
 import Secao from "@/componentes/secao";
 import Topico from "@/componentes/topico";
 import ImgFull from "@/componentes/imgfull";
+import ImgFim from "@/componentes/imgFim";
 import Details from "@/componentes/details";
 import Arma from "@/componentes/arma";
 import ParticleBackground from "@/componentes/background";
@@ -16,9 +17,12 @@ import { useState } from "react";
 import { Hourglass, Filter, Crown } from 'lucide-react';
 
 import Banner from '../../public/geral/Banner.png';
+import funnyImage from '../../public/geral/funny_imagem_em_sun_caralho.png';
 import Talento from "@/componentes/talento";
 import Artefato from "@/componentes/artefato";
 import ArmaTabela from "@/componentes/armaTabela";
+import Constelacao from "@/componentes/constelacao";
+import TabelaConstelacoes from "@/componentes/constelacoesTabela";
 
 export default function Home() {
 
@@ -275,8 +279,8 @@ export default function Home() {
                 <ArmaTabela>
 
                 </ArmaTabela>
-                <p className={styles.fonte} ><b><a target="_blank" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vQsCcwyVh-P5mVIyRGUm8_XS49Bka9iLzTz-7cgny5kckk-SRZk4DPkUqi_3tmoGWwPAm_VgJPhuBA1/pubhtml#">Fonte</a></b></p>
               </div>
+              <p className={styles.fonte} ><b><a target="_blank" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vQsCcwyVh-P5mVIyRGUm8_XS49Bka9iLzTz-7cgny5kckk-SRZk4DPkUqi_3tmoGWwPAm_VgJPhuBA1/pubhtml#">Fonte</a></b></p>
             </Secao>
           </Topico>
           <Topico titulo={"Sinergias"} id={"sinergias"}>
@@ -520,7 +524,40 @@ export default function Home() {
             <p className={styles.fonte} ><b><a target="_blank" href="https://docs.google.com/spreadsheets/d/10XyjMxeWu59gFDU9VVSsmG0MTlh8r7RevRfa7Bk9r-0/edit?gid=1579367017#gid=1579367017">Fonte</a></b></p>
           </Topico>
           <Topico titulo={"Constelações"} id={"constelacoes"} >
-
+            <Constelacao c={"C1"} nome={"Instituição Venerável"} valor={"5"} motivo={"A C1 de Neuvillette é um ótimo investimento, proporcionando um aumento considerável no dano e uma melhoria na qualidade de vida ao ganhar um stack de A1 ao entrar no campo, aumentando o dano em equipes de Dois Elementos e melhorando a resistência a interrupções. Seu valor varia conforme a composição da equipe e o estilo de jogo, mas com toda certeza é uma das melhores constelações dele."} >
+              <p>Quando Neuvillette entra no campo de batalha, ele obtém um acúmulo de "Glória do Dragão" do Talento Passivo "Herdeiro do Antigo Legado do Mar". É necessário ter desbloqueado o Talento Passivo "Herdeiro do Antigo Legado do Mar".</p>
+              <p>Além disso, ao lançar seu Fortalecimento de <b>Ataque Carregado: Reprimenda Judicial</b> e <b>Ataque Carregado: Justiça Igual,</b> sua Resistência contra Interrupção aumenta.</p>
+            </Constelacao>
+            <Constelacao c={"C2"} nome={"A Lei Ordena"} valor={"3"} motivo={"A C2 de Neuvillette oferece um aumento direto no dano, concedendo até 42% de CRIT DMG para seus ataques carregados, a sua maior fonte de dano, A sua C2 pode deixar a opção de Coroa de HP% mais viável do que de Dano Crítico. Apesar disso, em builds com muito dano Crítico, essa constelação trará pouco aumento de DPS para Neuvillette, sendo uma constelação que serve normalmente como ponte para sua C3."} >
+              <p>O Talento Passivo "Herdeiro do Antigo Legado do Mar" é fortalecido: para cada acúmulo de "Glória do Dragão", aumenta o Dano CRIT de <b>Ataque Carregado: Justiça Igual</b> em 14%, com um máximo de aumento de 42%. É necessário ter desbloqueado o Talento Passivo "Herdeiro do Antigo Legado do Mar".</p>
+            </Constelacao>
+            <Constelacao c={"C3"} nome={"Ficção Antiga"} valor={"5"} motivo={"Aumenta o nível do talento de Ataques Normais de Neuvillette, resultando em um bom aumento de dano, sendo uma das suas melhores constelações é recomendável parar por aqui, já que suas próximas constelações não irão compensar tanto."} >
+              <p>Aumenta o nível do Ataque Normal: Como Águas Paradas em 3.</p>
+              <p>O nível máximo de elevação é 15.</p>
+            </Constelacao>
+            <Constelacao c={"C4"} nome={"Coroado em Compaixão"} valor={"2"} motivo={"A C4 de Neuvillette gera gotas adicionais por rotação, as gotas que ele gera em sua C4 resultam entre 1~2 AC por rotação, o que parece ser uma boa coisa, porém, dificilmente você vai querer estender tanto o tempo em campo de Neuvillette sem querer re-aplicar os Buffs passados. Sua C4 só compensa se você for atrás da C6, sendo muito ruim sua C4 sem a C6."} >
+              <p>Quando Neuvillette está ativo no campo de batalha e é curado, gerará 1 Gota d'Água Primordial. Esse efeito pode ser desencadeado uma vez a cada 4s.</p>
+            </Constelacao>
+            <Constelacao c={"C5"} nome={"Julgamento Axiomático"} valor={"2"} motivo={"Aumenta o nível do talento Supremo de Neuvillette, oferecendo um leve aumento de dano, mas muito pouco comparado às demais constelações, a tornado uma das piores constelação de Neuvillette."} >
+              <p>Aumenta o nível do Supremo: Marés, Eu Retornei em 3.</p>
+              <p>O nível máximo de elevação é 15.</p>
+            </Constelacao>
+            <Constelacao c={"C6"} nome={"Recompensa Furiosa"} valor={"5"} motivo={"A C6 de Neuvillette aumenta a duração e o dano dos seus Ataques Carregados, permitindo estender a duração absorvendo Gotas de Água e adicionando dano adicional a cada 2s. Essa constelação oferece um grande aumento de dano, mas pode exigir ajustes nas rotações e na duração dos buffs. É um ótimo aprimoramento para Neuvillette."} >
+              <p>Ao lançar <b>Ataque Carregado: Justiça Igual,</b> Neuvillette pode absorver as Gotas d'Água Primordial em uma certa AdE próxima. Cada Gota d'Água Primordial absorvida prolongará a duração de Ataque Carregado: Justiça Igual em 1s.</p>
+              <p>Além disso, quando seu <b>Ataque Carregado: Justiça Igual</b> atingir um inimigo, lançará 2 correntes adicionais a cada 2s. Cada corrente causa Dano Hydro equivalente a 10% da Vida Máxima de Neuvillette. O dano causado dessa forma é considerado <b>Dano de Ataque Carregado: Justiça Igual.</b></p>
+            </Constelacao>
+            <Secao>
+              <h3 style={{fontWeight: '600', marginTop: '40px'}} >Aumento de Dano por Constelação</h3>
+              <p>Foi considerado:</p>
+              <div>
+                <p><b>Neuvillette:</b> R1, 4 peças de MH</p>
+                <p><b>Furina:</b>  Espada Pútrida, 4 peças de GT</p>
+                <p><b>Kazuha:</b> Xiphos, 4 peças de VV</p>
+                <p><b>Zhongli:</b> Favonius, 4 peças de Pedra arcaica</p>
+              </div>
+              <TabelaConstelacoes></TabelaConstelacoes>
+            </Secao>
+            <ImgFim imagem={funnyImage} alt={"fim"}/>
           </Topico>
         </main>
       </div>

@@ -1,0 +1,48 @@
+.container {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 15px;
+    border: 2px solid rgba(0, 162, 255, 0.541);
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 
+    0px 0px 20px 10px rgba(54, 144, 228, 0.24),
+    0px 0px 5px 5px rgba(54, 144, 228, 0.178),
+    0px 0px 100px 50px rgba(54, 144, 228, 0.171) inset,
+    0px 0px 20px 10px rgba(54, 144, 228, 0.178) inset;
+}
+.nota {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+.nome {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    gap: 20px;
+}
+.motivo_off {
+    display: none;
+}
+.motivo_on {
+    display: block;
+    animation: fade 0.5s;
+}
+.arrow_on {
+    transform: rotateX(180deg);
+    width: 25px;
+    height: auto;
+    flex-shrink: 0;
+    stroke: white;
+}
+.arrow_off {transform: rotate(0deg);
+    width: 25px;
+    height: auto;
+    flex-shrink: 0;
+    stroke: gray;
+}
+@keyframes fade {
+    0% {opacity: 0; transform: translateY(-15px);}
+    100% {opacity: 1;}
+}

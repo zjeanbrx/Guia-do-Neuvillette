@@ -9,6 +9,16 @@
     border-radius: 10px;
     overflow: hidden;
 }
+@media (max-width: 400px) {
+    .imagem_container {
+        width: 55px;
+        height: 55px;
+    }
+    .imagem_container img {
+        width: 55px;
+        height: 55px;
+    }
+}
 .raridade5 {
     background: linear-gradient(180deg, #955f34, #bb7735);
     box-shadow: 0 0 8px #bb7735;
