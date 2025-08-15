@@ -561,7 +561,7 @@ export default function Home() {
             <div className={styles.creditos}>
               <h3>Ajudantes:</h3>
               <div>
-                <p><b>Jean</b> (jean5021)</p>
+                <p><b>Jean</b> (jean2051)</p>
                 <p><b>042</b> (deminimigo)</p>
                 <p><b>Alyssa</b> (the.lyssa)</p>
                 <p><b>Brettas</b> </p>
